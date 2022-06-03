@@ -71,20 +71,20 @@ Route::middleware('auth')->group(function () {
 
 // landing page
 Route::get('/', function () {
-    return view('index', ['judul_halaman' => 'Desa Wisata Coal']);
+    return view('index', ['judul_halaman' => 'Desa Wisata Liang Ndara']);
 });
 Route::get('/about', function () {
-    return view('about', ['judul_halaman' => 'Tentang Kami | Desa Wisata Coal']);
+    return view('about', ['judul_halaman' => 'Tentang Kami | Desa Wisata Liang Ndara']);
 });
 Route::get('/gallery', function () {
-    return view('gallery', ['judul_halaman' => 'Galeri | Desa Wisata Coal']);
+    return view('gallery', ['judul_halaman' => 'Galeri | Desa Wisata Liang Ndara']);
 });
 Route::get('/blog', function () {
-    return view('blog', ['judul_halaman' => 'Blog | Desa Wisata Coal']);
+    return view('blog', ['judul_halaman' => 'Blog | Desa Wisata Liang Ndara']);
 });
 Route::get('/blog/slug', function () {
-    return view('blog-details', ['judul_halaman' => 'Judul Postingan | Desa Wisata Coal']);
+    return view('blog-details', ['judul_halaman' => 'Judul Postingan | Desa Wisata Liang Ndara']);
 });
 Route::get('/contact', function () {
-    return view('contact', ['judul_halaman' => 'Kontak Kami | Desa Wisata Coal']);
+    return view('contact', ['judul_halaman' => 'Kontak Kami | Desa Wisata Liang Ndara']);
 });
