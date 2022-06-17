@@ -1,103 +1,73 @@
 @extends('layouts.main')
 
 @section('page-content')
-    <section class="page-title" style="background-image: url(assets/images/background/bg-9.jpg)">
+@foreach ($sections as $section)
+    <?php 
+        $image = json_decode($section->cover);
+    ?>
+    @if ($section->slug === 'contact')
+    <section class="page-title" style="background-image: url(<?= asset($image != null ? 'storage/'.$image[0] : 'assets/images/background/bg-4.jpg') ?>)">
+        <div class="drop-layer-contact"></div>
         <div class="auto-container">
             <div class="content-box">
                 <div class="content-wrapper">
                     <div class="title">
-                        <h1>Kontak Kami.</h1>
+                        <h1 style="z-index: 3">{{ $section->title }}</h1>
                     </div>
-                    <ul class="bread-crumb">
+                    <ul class="bread-crumb" style="z-index: 3">
                         <li><a href="./">Beranda</a></li>
-                        <li>Kontak Kami</li>
+                        <li>{{ $section->title }}</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
+    @endif
+@endforeach
     <!-- Contact Form section -->
     <section class="contact-form-section">
         <div class="auto-container">
             <div class="wrapper-box">
+                @foreach ($sections as $section)
+                @if ($section->slug === 'help')
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="our-facts" style="background-image: url(assets/images/resource/image-54.jpg)">
-                            <div class="column counter-column">
-                                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon-outer">
-                                        <div class="icon"><span class="icon-ambulance"></span></div>
-                                    </div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="345">0</span>
-                                    </div>
-                                    <div class="text">
-                                        For Any Type of <br />
-                                        Medical Emergency
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column counter-column">
-                                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon-outer">
-                                        <div class="icon"><span class="icon-police"></span></div>
-                                    </div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="911">0</span>
-                                    </div>
-                                    <div class="text">
-                                        For Police and <br />
-                                        Law Enforcement
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column counter-column">
-                                <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon-outer">
-                                        <div class="icon"><span class="icon-recyclebin"></span></div>
-                                    </div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="667">0</span>
-                                    </div>
-                                    <div class="text">
-                                        For Recycling And <br />
-                                        Garbage Related
-                                    </div>
-                                </div>
-                            </div>
+                        <?php 
+                            $imageHelp = json_decode($section->cover);
+                        ?>
+                        <div class="our-facts" style="background-image: url(<?= asset($imageHelp != null ? 'storage/'.$imageHelp[0] : 'assets/images/background/bg-4.jpg') ?>)" style="height: 100% !important">
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="contact-form-area">
                             <div class="sec-title mb-30">
-                                <h2>
-                                    Mencari Bantuan <br />
-                                    Atau Punya Pertanyaan
-                                </h2>
+                                <h2>{{ $section->title }}</h2>
                             </div>
                             <div class="text mb-30">
-                                Enim ad minim veniam quis nostrud exercitation ullamco laboris aliquip <br />
-                                ex ea reprehenderit sint occaecat cupidata proids.
+                                {!! $section->description !!}
                             </div>
                             <!--Contact Form-->
                             <div class="contact-form">
-                                <form method="post" target="_blank" id="contact-form">
+                                <form method="post" target="_blank" id="contact-form" autocomplete="off">
+                                    {{ csrf_field() }}
                                     <div class="row">
                                         <div class="form-group col-md-12">
-                                            <input type="text" name="nama" placeholder="Your Name" required />
+                                            <input type="text" name="nama" placeholder="Nama" required />
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <input type="email" name="email" placeholder="Your Email" required />
+                                            <input type="email" name="email" placeholder="Email" required />
+                                        </div>
+                                        
+                                        {{-- nomor --}}
+                                        @foreach ($settings as $setting)
+                                        <input type="hidden" name="nomor" value="{{ $setting->telpon }}" />
+                                        @endforeach
+                                        
+                                        <div class="form-group col-md-12">
+                                            <textarea name="pesan" placeholder="Isi pesan" required></textarea>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <input type="text" name="subjek" placeholder="Subject" required />
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <textarea name="pesan" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <button class="theme-btn btn-style-one" type="submit" name="submit" data-loading-text="Please wait..."><span>Send Message</span></button>
+                                            <button class="theme-btn btn-style-one" type="submit"><span>Kirim Pesan</span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -105,6 +75,8 @@
                         </div>
                     </div>
                 </div>
+                @endif
+                @endforeach
             </div>
         </div>
     </section>
@@ -115,42 +87,43 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-info-block">
-                        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63119.096140118505!2d119.90744187808576!3d-8.601422600235743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db488277e363fed%3A0x42137d122a3e7c15!2sLiang%20Ndara%2C%20Kec.%20Sano%20Nggoang%2C%20Kabupaten%20Manggarai%20Barat%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1654252590227!5m2!1sid!2sid"
-                            width="100%"
-                            height="450"
-                            style="border: 0"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                        ></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63119.096140118505!2d119.90744187808576!3d-8.601422600235743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db488277e363fed%3A0x42137d122a3e7c15!2sLiang%20Ndara%2C%20Kec.%20Sano%20Nggoang%2C%20Kabupaten%20Manggarai%20Barat%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1655393204007!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="contact-info-block">
-                        <h3>City Muncipal Office</h3>
+                        @foreach ($sections as $section)
+                            
+                        @if ($section->slug === 'maps')
+                        <h3>{{ $section->title }}</h3>
                         <div class="text mb-30">
-                            Fugiat nulla pariatur excepteur sint occaecat proident <br />
-                            sunt in culp mollit anim id est laborum.
+                            {!! $section->description !!} <br />
                         </div>
+                        @endif
+                        @endforeach
                         <ul class="contact-info">
                             <li>
-                                <div class="icon"><img src="assets/images/icons/icon-1.png" alt="" /></div>
-                                <div class="text"><strong>Lokasi</strong>Melo,Desa Liang Ndara, Kecamatan Mbeliling</div>
+                                @foreach ($settings as $setting)
+                                    
+                                <div class="icon"><img src="{{asset('assets/images/icons/icon-1.png')}}" alt="" /></div>
+                                <div class="text">
+                                    <strong>Lokasi</strong>{{ $setting->lokasi }}<br />
+                                </div>
                             </li>
                             <li>
-                                <div class="icon"><img src="assets/images/icons/icon-2.png" alt="" /></div>
+                                <div class="icon"><img src="{{asset('assets/images/icons/icon-2.png')}}" alt="" /></div>
                                 <div class="text">
                                     <strong>Telepon</strong>
-                                    <a href="tel:+1(345)2067849">+ 1 (345) 206 7849</a>
+                                    <a href="tel:+62 823 3976 5401">{{ $setting->telpon }}</a>
                                 </div>
                             </li>
                             <li>
-                                <div class="icon"><img src="assets/images/icons/icon-3.png" alt="" /></div>
+                                <div class="icon"><img src="{{asset('assets/images/icons/icon-3.png')}}" alt="" /></div>
                                 <div class="text">
                                     <strong>Email</strong>
-                                    <a href="mailto:munciple@example.net">munciple@example.net</a>
+                                    <a href="mailto:munciple@example.net">{{ $setting->email}}</a>
                                 </div>
+                                @endforeach
                             </li>
                         </ul>
                     </div>
