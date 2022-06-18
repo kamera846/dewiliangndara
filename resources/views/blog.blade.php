@@ -1,179 +1,203 @@
 @extends('layouts.main')
 
 @section('page-content')
-@foreach ($sections as $section)
-    <?php 
-    $image = json_decode($section->cover);
-    ?>
-    @if ($section->slug === 'blog')
-    <section class="page-title" style="background-image: url(<?= asset($image != null ? 'storage/'.$image[0] : 'assets/images/background/bg-4.jpg') ?>)">
-        <div class="drop-layer-blog"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1 style="z-index: 3">{{ $section->title }}</h1>
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+      <div class="row">
+        <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
+          <h1 class="mb-3">Our Blogs</h1>
+          <p class="lead px-lg-5 px-xxl-8">Welcome to our journal. Here you can find the latest company news and business articles.</p>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  <section class="wrapper bg-light wrapper-border">
+    <div class="container inner py-8">
+        <div class="row justify-content-center gx-lg-8 gx-xl-12 gy-4 gy-lg-0">
+          <div class="col-xl-6 col-lg-8 col-md-10 sidebar">
+            <form class="search-form">
+              <div class="form-floating mb-0">
+                <input id="search-form" type="text" class="form-control" placeholder="Search">
+                <label for="search-form">Search</label>
+              </div>
+            </form>
+            <!-- /.search-form -->
+          </div>
+          <!-- /column .sidebar -->
+        </div>
+        <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      <div class="row gx-lg-8 gx-xl-12">
+        <div class="col-lg-8">
+          <div class="blog classic-view">
+            <article class="post">
+              <div class="card">
+                <figure class="card-img-top overlay overlay-1 hover-scale"><a href="./blog-post.html"><img src="./assets/img/photos/b1.jpg" alt="" /></a>
+                  <figcaption>
+                    <h5 class="from-top mb-0">Read More</h5>
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <div class="post-header">
+                    <div class="post-category text-line">
+                      <a href="#" class="hover" rel="category">Teamwork</a>
                     </div>
-                    <ul class="bread-crumb" style="z-index: 3">
-                        <li><a href="./">Beranda</a></li>
-                        <li>{{ $section->title }}</li>
+                    <!-- /.post-category -->
+                    <h2 class="post-title mt-1 mb-0"><a class="link-dark" href="./blog-post.html">Amet Dolor Bibendum Parturient Cursus</a></h2>
+                  </div>
+                  <!-- /.post-header -->
+                  <div class="post-content">
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh. Cras mattis consectetur purus.</p>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.card-body -->
+                <div class="card-footer">
+                  <ul class="post-meta d-flex mb-0">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Jul 2021</span></li>
+                    <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By Sandbox</span></a></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span> Comments</span></a></li>
+                    <li class="post-likes ms-auto"><a href="#"><i class="uil uil-heart-alt"></i>3</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
+                </div>
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </article>
+            <!-- /.post -->
+          </div>
+          <!-- /.blog -->
+            <div class="row justify-content-center">
+                <div class="col">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true"><i class="uil uil-arrow-left"></i></span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true"><i class="uil uil-arrow-right"></i></span>
+                        </a>
+                      </li>
                     </ul>
+                    <!-- /.pagination -->
                 </div>
             </div>
         </div>
-    </section>
-    @endif
-    @endforeach
-    <!-- Sidebar Page Container -->
-    <section class="sidebar-page-container">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-8">
-
-                    @if($jumlah_blog >= 1 )
-
-                        @foreach($blogs as $blog)
-
-                            <div class="news-block-two">
-                                <div class="inner-box">
-                                    <div class="image">
-                                        <img src="{{ asset('storage/' . $blog->gambar_blog) }}" alt="{{ $blog->judul }}" />
-                                        <div class="overlay">
-                                            <div class="link-btn">
-                                                <a href="/blog/{{ $blog->slug }}"><i class="icon-arrow"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="lower-content">
-                                        <h4><a href="/blog/{{ $blog->slug }}">{{ $blog->judul }}</a></h4>
-                                        <div class="text">
-                                            {{ substr(strip_tags($blog->konten), 0, 285) }}...
-                                        </div>
-                                        <ul class="post-meta">
-                                            <li><i class="far fa-user"></i>{{ ucwords($blog->penulis) }}</li>
-                                            {{-- <li><i class="far fa-calendar"></i>{{ $tanggal . ' ' . $bulan}}</li> --}}
-                                            {{-- <li><i class="far fa-calendar"></i>{{ date('d-m-Y', strtotime($blog->created_at))}}</li> --}}
-                                            <li><i class="far fa-calendar"></i>{{ $blog->created_at->isoFormat('d MMMM Y') }}</li>
-                                            <li class="read-more">
-                                                <a href="/blog/{{ $blog->slug }}"><i class="icon-arrow"></i>Selengkapnya</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        @endforeach
-
-                        <!-- Post Pagination -->
-                        {{-- <ul class="post-pagination mt-5 mb-30">
-                            <li class="prev-page">
-                                <a href="#"><i class="icon-arrow"></i></a>
-                            </li>
-                            <li class="current"><span> 1</span></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="next-page">
-                                <a href="#"><i class="icon-arrow"></i></a>
-                            </li>
-                        </ul> --}}
-
-                        <div class="row justify-content-center">
-                            {{ $blogs->links() }}
-                        </div>
-
-                    @else
-                        
-                        @if(request('cari'))
-                            <h4 class="text-center">Tidak ada hasil.</h3>
-                        @else
-                            <h4 class="text-center">Belum ada postingan.</h3>
-                        @endif
-
-                    @endif
-
+        <!-- /column -->
+        <aside class="col-lg-4 sidebar mt-8 mt-lg-6">
+          <div class="widget">
+            <h4 class="widget-title mb-3">About Us</h4>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+            <nav class="nav social">
+              <a href="#"><i class="uil uil-twitter"></i></a>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+              <a href="#"><i class="uil uil-dribbble"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+            <div class="clearfix"></div>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Popular Posts</h4>
+            <ul class="image-list">
+              <li>
+                <figure class="rounded"><a href="./blog-post.html"><img src="./assets/img/photos/a1.jpg" alt="" /></a></figure>
+                <div class="post-content">
+                  <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Magna Mollis Ultricies</a> </h6>
+                  <ul class="post-meta">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Mar 2021</span></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
                 </div>
-                <div class="col-lg-4">
-                    <aside class="sidebar blog-sidebar sidebar-style-two">
-                        <div class="widget widget_search">
-                            <h3 class="widget-title">Cari</h3>
-                            <form action="/blog" autocomplete="off" class="search-form">
-                                <div class="form-group">
-                                    <input type="search" name="cari" placeholder="Cari Postingan ..." value="{{ request('cari') }}"/>
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </div>
-                            </form>
-                        </div>
-
-                        @if(request('cari'))
-
-                            <div class="widget widget_popular_post">
-                                <h3 class="widget-title">Postingan Terbaru</h3>
-
-                                @foreach($recentPosts as $post)
-                                    
-                                    <article class="post">
-                                        <figure class="post-thumb">
-                                            <a href="/blog/{{ $post->slug }}"><img src="{{ asset('storage/' . $post->gambar_blog) }}" alt="{{ $post->judul }}" /></a>
-                                        </figure>
-                                        <div class="content">
-                                            <h5>
-                                                <a href="/blog/{{ $post->slug }}"">{{ $post->judul }}</a>
-                                            </h5>
-                                            <div class="post-info"><i class="far fa-calendar-alt"></i>{{ $post->created_at->isoFormat('d MMMM Y') }}</div>
-                                        </div>
-                                    </article>
-                                
-                                @endforeach
-
-                            </div>
-                            
-                        @endif
-                        <!-- <div class="widget widget_categories style-two">
-                            <h3 class="widget-title">Blog Categories</h3>
-                            <div class="widget-content">
-                                <ul class="categories-list">
-                                    <li><a href="blog-details.php">Business & Taxation</a></li>
-                                    <li><a href="blog-details.php">Law, Justice & Police</a></li>
-                                    <li class="current"><a href="blog-details.php"> Government & Elections</a></li>
-                                    <li><a href="blog-details.php">Pets & Wildlife Area</a></li>
-                                    <li><a href="blog-details.php">Employment & Jobs</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
-                        <!-- Tag-cloud Widget -->
-                        <!-- <div class="widget widget_tag_cloud">
-                            <h3 class="widget-title">Tags Cloud</h3>
-                            <ul class="clearfix">
-                                <li><a href="#">recreation</a></li>
-                                <li><a href="#">activities</a></li>
-                                <li><a href="#">administration</a></li>
-                                <li><a href="#">city</a></li>
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">municipal</a></li>
-                                <li><a href="#">tourists</a></li>
-                                <li><a href="#">food & Drink</a></li>
-                            </ul>
-                        </div> -->
-                        <!-- Contact Widget two -->
-                        <!-- <div class="widget contact-widget-two" style="background-image: url(assets/images/resource/image-51.jpg)">
-                            <h3 class="widget-title">Municipal Complaints</h3>
-                            <div class="widget-content">
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="#"><i class="pe-7s-headphones"></i> Emergency 9922</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:mail@governlia.net"><i class="pe-7s-mail-open"></i> mail@governlia.net</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:8526105599"><i class="pe-7s-call"></i> Call us 852-610-5599</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
-                    </aside>
+              </li>
+              <li>
+                <figure class="rounded"> <a href="./blog-post.html"><img src="./assets/img/photos/a2.jpg" alt="" /></a></figure>
+                <div class="post-content">
+                  <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Ornare Nullam Risus</a> </h6>
+                  <ul class="post-meta">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>16 Feb 2021</span></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
                 </div>
-            </div>
-        </div>
-    </section>
+              </li>
+              <li>
+                <figure class="rounded"><a href="./blog-post.html"><img src="./assets/img/photos/a3.jpg" alt="" /></a></figure>
+                <div class="post-content">
+                  <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Euismod Nullam Fusce</a> </h6>
+                  <ul class="post-meta">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>8 Jan 2021</span></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>5</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
+                </div>
+              </li>
+            </ul>
+            <!-- /.image-list -->
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Categories</h4>
+            <ul class="unordered-list bullet-primary text-reset">
+              <li><a href="#">Teamwork (21)</a></li>
+              <li><a href="#">Ideas (19)</a></li>
+              <li><a href="#">Workspace (16)</a></li>
+              <li><a href="#">Coding (7)</a></li>
+              <li><a href="#">Meeting (12)</a></li>
+              <li><a href="#">Business Tips (14)</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Tags</h4>
+            <ul class="list-unstyled tag-list">
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Still Life</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Urban</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Nature</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Landscape</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Macro</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Fun</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Workshop</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Photography</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Archive</h4>
+            <ul class="unordered-list bullet-primary text-reset">
+              <li><a href="#">February 2019</a></li>
+              <li><a href="#">January 2019</a></li>
+              <li><a href="#">December 2018</a></li>
+              <li><a href="#">November 2018</a></li>
+              <li><a href="#">October 2018</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column .sidebar -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  
 @endsection

@@ -102,29 +102,30 @@ class GalleryController extends Controller
     }
     public function landingPage()
     {
-        $settings = Setting::get();
-        foreach ($settings as $setting) {
-            if ($setting->web_title !== null) {
-                return view('gallery', [
-                    'judul_halaman' => 'Galeri | ' . $setting->web_title,
-                    'galleries' => Gallery::latest('updated_at')->paginate(4),
-                    'jumlah_galeri' => Gallery::count(),
-                    'settings' => Setting::get(),
-                    'socials' => Social::get(),
-                    'sections' => Section::get(),
-                    'newBlogs' => Blog::latest('updated_at')->get(),
-                ]);
-            } else {
-                return view('gallery', [
-                    'judul_halaman' => 'Galeri',
-                    'galleries' => Gallery::latest('updated_at')->paginate(4),
-                    'jumlah_galeri' => Gallery::count(),
-                    'settings' => Setting::get(),
-                    'socials' => Social::get(),
-                    'sections' => Section::get(),
-                    'newBlogs' => Blog::latest('updated_at')->get(),
-                ]);
-            }
-        }
+        return view('gallery');
+        // $settings = Setting::get();
+        // foreach ($settings as $setting) {
+        //     if ($setting->web_title !== null) {
+        //         return view('gallery', [
+        //             'judul_halaman' => 'Galeri | ' . $setting->web_title,
+        //             'galleries' => Gallery::latest('updated_at')->paginate(4),
+        //             'jumlah_galeri' => Gallery::count(),
+        //             'settings' => Setting::get(),
+        //             'socials' => Social::get(),
+        //             'sections' => Section::get(),
+        //             'newBlogs' => Blog::latest('updated_at')->get(),
+        //         ]);
+        //     } else {
+        //         return view('gallery', [
+        //             'judul_halaman' => 'Galeri',
+        //             'galleries' => Gallery::latest('updated_at')->paginate(4),
+        //             'jumlah_galeri' => Gallery::count(),
+        //             'settings' => Setting::get(),
+        //             'socials' => Social::get(),
+        //             'sections' => Section::get(),
+        //             'newBlogs' => Blog::latest('updated_at')->get(),
+        //         ]);
+        //     }
+        // }
     }
 }

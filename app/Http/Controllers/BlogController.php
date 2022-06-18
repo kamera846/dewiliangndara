@@ -123,32 +123,33 @@ class BlogController extends Controller
 
     public function landingPage()
     {
-        $settings = Setting::get();
-        foreach ($settings as $setting) {
-            if ($setting->web_title !== null) {
-                return view('blog', [
-                    'blogs' => Blog::latest('updated_at')->cari()->paginate(3),
-                    'judul_halaman' => 'Blog | '  . $setting->web_title,
-                    'jumlah_blog' => Blog::cari()->count(),
-                    'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
-                    'settings' => Setting::get(),
-                    'socials' => Social::get(),
-                    'sections' => Section::get(),
-                    'newBlogs' => Blog::latest('updated_at')->get(),
-                ]);
-            } else {
-                return view('blog', [
-                    'blogs' => Blog::latest('updated_at')->cari()->paginate(3),
-                    'judul_halaman' => 'Blog',
-                    'jumlah_blog' => Blog::cari()->count(),
-                    'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
-                    'settings' => Setting::get(),
-                    'socials' => Social::get(),
-                    'sections' => Section::get(),
-                    'newBlogs' => Blog::latest('updated_at')->get(),
-                ]);
-            }
-        }
+        return view('blog');
+        // $settings = Setting::get();
+        // foreach ($settings as $setting) {
+        //     if ($setting->web_title !== null) {
+        //         return view('blog', [
+        //             'blogs' => Blog::latest('updated_at')->cari()->paginate(3),
+        //             'judul_halaman' => 'Blog | '  . $setting->web_title,
+        //             'jumlah_blog' => Blog::cari()->count(),
+        //             'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
+        //             'settings' => Setting::get(),
+        //             'socials' => Social::get(),
+        //             'sections' => Section::get(),
+        //             'newBlogs' => Blog::latest('updated_at')->get(),
+        //         ]);
+        //     } else {
+        //         return view('blog', [
+        //             'blogs' => Blog::latest('updated_at')->cari()->paginate(3),
+        //             'judul_halaman' => 'Blog',
+        //             'jumlah_blog' => Blog::cari()->count(),
+        //             'recentPosts' => Blog::latest('updated_at')->limit(3)->get(),
+        //             'settings' => Setting::get(),
+        //             'socials' => Social::get(),
+        //             'sections' => Section::get(),
+        //             'newBlogs' => Blog::latest('updated_at')->get(),
+        //         ]);
+        //     }
+        // }
     }
 
 

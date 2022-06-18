@@ -1,134 +1,170 @@
 @extends('layouts.main')
 
 @section('page-content')
-@foreach ($sections as $section)
-    <?php 
-        $image = json_decode($section->cover);
-    ?>
-    @if ($section->slug === 'contact')
-    <section class="page-title" style="background-image: url(<?= asset($image != null ? 'storage/'.$image[0] : 'assets/images/background/bg-4.jpg') ?>)">
-        <div class="drop-layer-contact"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1 style="z-index: 3">{{ $section->title }}</h1>
-                    </div>
-                    <ul class="bread-crumb" style="z-index: 3">
-                        <li><a href="./">Beranda</a></li>
-                        <li>{{ $section->title }}</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    @endif
-@endforeach
-    <!-- Contact Form section -->
-    <section class="contact-form-section">
-        <div class="auto-container">
-            <div class="wrapper-box">
-                @foreach ($sections as $section)
-                @if ($section->slug === 'help')
-                <div class="row">
-                    <div class="col-lg-5">
-                        <?php 
-                            $imageHelp = json_decode($section->cover);
-                        ?>
-                        <div class="our-facts" style="background-image: url(<?= asset($imageHelp != null ? 'storage/'.$imageHelp[0] : 'assets/images/background/bg-4.jpg') ?>)" style="height: 100% !important">
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="contact-form-area">
-                            <div class="sec-title mb-30">
-                                <h2>{{ $section->title }}</h2>
-                            </div>
-                            <div class="text mb-30">
-                                {!! $section->description !!}
-                            </div>
-                            <!--Contact Form-->
-                            <div class="contact-form">
-                                <form method="post" target="_blank" id="contact-form" autocomplete="off">
-                                    {{ csrf_field() }}
-                                    <div class="row">
-                                        <div class="form-group col-md-12">
-                                            <input type="text" name="nama" placeholder="Nama" required />
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <input type="email" name="email" placeholder="Email" required />
-                                        </div>
-                                        
-                                        {{-- nomor --}}
-                                        @foreach ($settings as $setting)
-                                        <input type="hidden" name="nomor" value="{{ $setting->telpon }}" />
-                                        @endforeach
-                                        
-                                        <div class="form-group col-md-12">
-                                            <textarea name="pesan" placeholder="Isi pesan" required></textarea>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <button class="theme-btn btn-style-one" type="submit"><span>Kirim Pesan</span></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endif
-                @endforeach
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Info section -->
-    <section class="contact-info-section">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="contact-info-block">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63119.096140118505!2d119.90744187808576!3d-8.601422600235743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db488277e363fed%3A0x42137d122a3e7c15!2sLiang%20Ndara%2C%20Kec.%20Sano%20Nggoang%2C%20Kabupaten%20Manggarai%20Barat%2C%20Nusa%20Tenggara%20Tim.!5e0!3m2!1sid!2sid!4v1655393204007!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-info-block">
-                        @foreach ($sections as $section)
-                            
-                        @if ($section->slug === 'maps')
-                        <h3>{{ $section->title }}</h3>
-                        <div class="text mb-30">
-                            {!! $section->description !!} <br />
-                        </div>
-                        @endif
-                        @endforeach
-                        <ul class="contact-info">
-                            <li>
-                                @foreach ($settings as $setting)
-                                    
-                                <div class="icon"><img src="{{asset('assets/images/icons/icon-1.png')}}" alt="" /></div>
-                                <div class="text">
-                                    <strong>Lokasi</strong>{{ $setting->lokasi }}<br />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon"><img src="{{asset('assets/images/icons/icon-2.png')}}" alt="" /></div>
-                                <div class="text">
-                                    <strong>Telepon</strong>
-                                    <a href="tel:+62 823 3976 5401">{{ $setting->telpon }}</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon"><img src="{{asset('assets/images/icons/icon-3.png')}}" alt="" /></div>
-                                <div class="text">
-                                    <strong>Email</strong>
-                                    <a href="mailto:munciple@example.net">{{ $setting->email}}</a>
-                                </div>
-                                @endforeach
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-18 pt-md-20 pb-21 pb-md-21 text-center">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 col-xxl-5 mx-auto">
+          <h1 class="mb-3">Get in Touch</h1>
+          <p class="lead px-xl-10 px-xxl-10">Have any questions? Reach out to us from our contact form and we will get back to you shortly.</p>
         </div>
-    </section>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  <section class="wrapper bg-light">
+    <div class="container pb-14 pb-md-16">
+      <div class="row">
+        <div class="col mt-n19 mb-16">
+          <div class="card shadow-lg">
+            <div class="row gx-0">
+              <div class="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start d-none d-md-block" data-image-src="./assets/img/photos/tm1.jpg">
+              </div>
+              <!--/column -->
+              <div class="col-lg-6">
+                <div class="p-10 p-md-11 p-lg-13">
+                  <h2 class="mb-3">Let’s Talk</h2>
+                  <p class="lead fs-lg">Let's make something great together. We are trusted by over 5000+ clients. Join them by using our services and grow your business.</p>
+                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <a href="#" class="btn btn-primary rounded-pill mt-2">Join Us</a>
+                </div>
+                <!--/div -->
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-xl-10 mx-auto">
+          <div class="row gy-10 gx-lg-8 gx-xl-12">
+            <div class="col-lg-8">
+              <form class="contact-form needs-validation" method="post" action="./assets/php/contact.php" novalidate>
+                <div class="messages"></div>
+                <div class="row gx-4">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Jane" required>
+                      <label for="form_name">First Name *</label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your first name. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Doe" required>
+                      <label for="form_lastname">Last Name *</label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your last name. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="jane.doe@example.com" required>
+                      <label for="form_email">Email *</label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please provide a valid email address. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-md-6">
+                    <div class="form-select-wrapper mb-4">
+                      <select class="form-select" id="form-select" name="department" required>
+                        <option selected disabled value="">Select a department</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Customer Support">Customer Support</option>
+                      </select>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please select a department. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <div class="form-floating mb-4">
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px" required></textarea>
+                      <label for="form_message">Message *</label>
+                      <div class="valid-feedback"> Looks good! </div>
+                      <div class="invalid-feedback"> Please enter your messsage. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck"> I agree to <a href="#" class="hover">terms and policy</a>. </label>
+                      <div class="invalid-feedback"> You must agree before submitting. </div>
+                    </div>
+                  </div>
+                  <!-- /column -->
+                  <div class="col-12">
+                    <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3" value="Send message">
+                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </form>
+              <!-- /form -->
+            </div>
+            <!--/column -->
+            <div class="col-lg-4">
+              <div class="d-flex flex-row">
+                <div>
+                  <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-location-pin-alt"></i> </div>
+                </div>
+                <div>
+                  <h5 class="mb-1">Address</h5>
+                  <address>Moonshine St. 14/05 Light City, London, United Kingdom</address>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div>
+                  <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
+                </div>
+                <div>
+                  <h5 class="mb-1">Phone</h5>
+                  <p>00 (123) 456 78 90 <br />00 (987) 654 32 10</p>
+                </div>
+              </div>
+              <div class="d-flex flex-row">
+                <div>
+                  <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-envelope"></i> </div>
+                </div>
+                <div>
+                  <h5 class="mb-1">E-mail</h5>
+                  <p class="mb-0"><a href="mailto:sandbox@email.com" class="link-body">sandbox@email.com</a></p>
+                  <p><a href="mailto:help@sandbox.com" class="link-body">help@sandbox.com</a></p>
+                </div>
+              </div>
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  <section class="wrapper bg-light">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25387.23478654725!2d-122.06115399490332!3d37.309248660190086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb4571bd377ab%3A0x394d3fe1a3e178b4!2sCupertino%2C%20CA%2C%20USA!5e0!3m2!1sen!2str!4v1645437305701!5m2!1sen!2str" style="width:100%; height: 500px; border:0" allowfullscreen></iframe>
+    </div>
+    <!-- /.map -->
+  </section>
+  <!-- /section -->
+
 @endsection

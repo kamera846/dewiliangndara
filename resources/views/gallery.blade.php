@@ -1,82 +1,111 @@
 @extends('layouts.main')
 
 @section('page-content')
-@foreach ($sections as $section)
-<?php 
-$image = json_decode($section->cover);
-?>
-@if($section->slug === 'gallery')
-    <section class="page-title" style="background-image: url(<?= asset($image != null ? 'storage/'.$image[0] : 'assets/images/background/bg-4.jpg') ?>)">
-        <div class="drop-layer-gallery"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1 style="z-index: 3">{{ $section->title }}</h1>
-                    </div>
-                    <ul class="bread-crumb" style="z-index: 3">
-                        <li><a href="./">Beranda</a></li>
-                        <li>{{ $section->title }}</li>
-                    </ul>
-                </div>
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
+            <h1 class="mb-3">Our Galleries</h1>
+            <p class="lead px-lg-5 px-xxl-8">Welcome to our lorem ipsum. Here you can find the latest company news and business articles.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+
+  <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+    <div class="row">
+      <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8">
+        <h2 class="fs-15 text-uppercase text-muted text-center mb-3">Our Galleries</h2>
+        <h3 class="display-4 text-center">Check out some of our awesome Galleries with creative ideas and great design.</h3>
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+    <div class="grid grid-view projects-masonry">
+      <div class="row gx-md-8 gy-10 gy-md-13 isotope" style="position: relative; height: 1147.05px;">
+        <div class="project item col-md-6 col-xl-4 product" style="position: absolute; left: 0%; top: 0px;">
+          <figure class="lift rounded mb-6"><a href="../../single-project.html"> <img src="../../assets/img/photos/cs16.jpg" alt=""></a></figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-purple">Cosmetic</div>
+              <h2 class="post-title h3">Cras Fermentum Sem</h2>
             </div>
+            <!-- /.post-header -->
+          </div>
+          <!-- /.project-details -->
         </div>
-    </section>
-    @endif
-    @endforeach
-    <!-- News section Three -->
-    <section class="news-section-three">
-        <div class="auto-container">
-
-            @if($jumlah_galeri >= 1 )
-                
-                <div class="row">
-                    @foreach($galleries as $gallery)
-
-                        <div class="col-lg-6 news-block">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <img src="{{ asset('storage/' . $gallery->foto) }}" alt="{{ $gallery->judul }}"/>
-                                    <div class="overlay">
-                                        <div class="link-btn">
-                                            <a target="_blank" href="{{ asset('storage/' . $gallery->foto) }}"><i class="icon-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lower-content">
-                                    <h4>{{ $gallery->judul }}</h4>
-                                    <div class="text">{{ $gallery->deskripsi }}</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    @endforeach
-                </div>
-                <!-- Post Pagination -->
-                {{-- <ul class="post-pagination mt-5 mb-30">
-                    <li class="prev-page">
-                        <a href="#"><i class="icon-arrow"></i></a>
-                    </li>
-                    <li class="current"><span> 1</span></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li class="next-page">
-                        <a href="#"><i class="icon-arrow"></i></a>
-                    </li>
-                </ul> --}}
-
-                <div class="row justify-content-center mt-3">
-                    {{ $galleries->links() }}
-                </div>
-
-            @else
-
-                <div class="col-12">
-                    <h3 class="text-center">Belum ada momen yang dapat dibagikan.</h3>
-                </div>
-
-            @endif
-
+        <!-- /.project -->
+        <div class="project item col-md-6 col-xl-4 workshop" style="position: absolute; left: 33.3333%; top: 0px;">
+          <figure class="lift rounded mb-6"><a href="../../single-project2.html"> <img src="../../assets/img/photos/cs17.jpg" alt=""></a></figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-leaf">Coffee</div>
+              <h2 class="post-title h3">Mollis Ipsum Mattis</h2>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <!-- /.project-details -->
         </div>
-    </section>
+        <!-- /.project -->
+        <div class="project item col-md-6 col-xl-4 still-life" style="position: absolute; left: 66.6667%; top: 0px;">
+          <figure class="lift rounded mb-6"><a href="../../single-project3.html"> <img src="../../assets/img/photos/cs18.jpg" alt=""></a></figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-violet">Still Life</div>
+              <h2 class="post-title h3">Ipsum Ultricies Cursus</h2>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <!-- /.project-details -->
+        </div>
+        <!-- /.project -->
+        <div class="project item col-md-6 col-xl-4 product" style="position: absolute; left: 66.6667%; top: 499.812px;">
+          <figure class="lift rounded mb-6"><a href="../../single-project2.html"> <img src="../../assets/img/photos/cs20.jpg" alt=""></a></figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-orange">Product</div>
+              <h2 class="post-title h3">Inceptos Euismod Egestas</h2>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <!-- /.project-details -->
+        </div>
+        <!-- /.project -->
+        <div class="project item col-md-6 col-xl-4 product" style="position: absolute; left: 0%; top: 581.125px;">
+          <figure class="lift rounded mb-6"><a href="../../single-project.html"> <img src="../../assets/img/photos/cs19.jpg" alt=""></a></figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-yellow">Product</div>
+              <h2 class="post-title h3">Sollicitudin Ornare Porta</h2>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <!-- /.project-details -->
+        </div>
+        <!-- /.project -->
+        <div class="project item col-md-6 col-xl-4 workshop" style="position: absolute; left: 33.3333%; top: 634.797px;">
+          <figure class="lift rounded mb-6"><a href="../../single-project3.html"> <img src="../../assets/img/photos/cs21.jpg" alt=""></a></figure>
+          <div class="project-details d-flex justify-content-center flex-column">
+            <div class="post-header">
+              <div class="post-category text-line mb-3 text-green">Workshop</div>
+              <h2 class="post-title h3">Ipsum Mollis Vulputate</h2>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <!-- /.project-details -->
+        </div>
+        <!-- /.project -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.grid -->
+  </div>
+  <!-- /section -->
+</div>
+<!-- /.content-wrapper --
+
 @endsection

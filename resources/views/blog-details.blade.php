@@ -1,141 +1,513 @@
 @extends('layouts.main')
 
 @section('page-content')
-    <section class="page-title style-two" style="background-image: url(<?= asset('storage/'.$blog->gambar_blog) ?>)">
-        <div class="drop-layer-detail"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <div class="content-wrapper">
-                    <div class="title">
-                        <h1>{{ $blog->judul }}</h1>
-                        <ul class="post-meta">
-                            <li><i class="far fa-user"></i>{{ ucwords($blog->penulis) }}</li>
-
-                            <li><i class="far fa-calendar"></i>{{ $blog->created_at->isoFormat('dddd, d MMMM Y') }}</li>
-                            {{-- <li><i class="far fa-calendar"></i>{{ $blog->created_at->isoFormat('d MMMM Y') }}</li> --}}
+<section class="wrapper bg-soft-primary">
+    <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+      <div class="row">
+        <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
+            <div class="post-header">
+                <div class="post-category text-line">
+                  <a href="#" class="text-reset" rel="category">Teamwork</a>
+                </div>
+                <!-- /.post-category -->
+                <h1 class="mb-4">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                <ul class="post-meta">
+                  <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Jul 2021</span></li>
+                  <li class="post-author"><i class="uil uil-user"></i><a href="#" class="text-reset"><span>By Sandbox</span></a></li>
+                  <li class="post-comments"><i class="uil uil-comment"></i><a href="#" class="text-reset">3<span> Comments</span></a></li>
+                  <li class="post-likes"><i class="uil uil-heart-alt"></i><a href="#" class="text-reset">3<span> Likes</span></a></li>
+                </ul>
+                <!-- /.post-meta -->
+              </div>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  <section class="wrapper bg-light wrapper-border">
+    <div class="container inner py-8">
+      <div class="row justify-content-center gx-lg-8 gx-xl-12 gy-4 gy-lg-0">
+        <div class="col-xl-6 col-lg-8 col-md-10 sidebar">
+          <form class="search-form">
+            <div class="form-floating mb-0">
+              <input id="search-form" type="text" class="form-control" placeholder="Search">
+              <label for="search-form">Search</label>
+            </div>
+          </form>
+          <!-- /.search-form -->
+        </div>
+        <!-- /column .sidebar -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      <div class="row gx-lg-8 gx-xl-12">
+        <div class="col-lg-8">
+          <div class="blog single">
+            <div class="card">
+              <figure class="card-img-top"><img src="./assets/img/photos/b1.jpg" alt="" /></figure>
+              <div class="card-body">
+                <div class="classic-view">
+                  <article class="post">
+                    <div class="post-content mb-5">
+                      <h2 class="h1 mb-4">Cras mattis consectetur purus fermentum</h2>
+                      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum.</p>
+                      <p>Donec sed odio dui consectetur adipiscing elit. Etiam adipiscing tincidunt elit, eu convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor libero, condimentum ac laoreet vitae, varius tempor nisi. Duis non arcu vel lectus urna mollis ornare vel eu leo.</p>
+                      <div class="row g-6 mt-3 mb-10">
+                        <div class="col-md-6">
+                          <figure class="hover-scale rounded cursor-dark"><a href="./assets/img/photos/b8-full.jpg" data-glightbox="title: Heading; description: Purus Vulputate Sem Tellus Quam" data-gallery="post"> <img src="./assets/img/photos/b8.jpg" alt="" /></a></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6">
+                          <figure class="hover-scale rounded cursor-dark"><a href="./assets/img/photos/b9-full.jpg" data-glightbox data-gallery="post"> <img src="./assets/img/photos/b9.jpg" alt="" /></a></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6">
+                          <figure class="hover-scale rounded cursor-dark"><a href="./assets/img/photos/b10-full.jpg" data-glightbox data-gallery="post"> <img src="./assets/img/photos/b10.jpg" alt="" /></a></figure>
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6">
+                          <figure class="hover-scale rounded cursor-dark"><a href="./assets/img/photos/b11-full.jpg" data-glightbox data-gallery="post"> <img src="./assets/img/photos/b11.jpg" alt="" /></a></figure>
+                        </div>
+                        <!--/column -->
+                      </div>
+                      <!-- /.row -->
+                      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna.</p>
+                      <blockquote class="fs-lg my-8">
+                        <p>Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula lacinia odio sem nec elit purus.</p>
+                        <footer class="blockquote-footer">Very important person</footer>
+                      </blockquote>
+                      <h3 class="h2 mb-4">Sit Vulputate Bibendum Purus</h3>
+                      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</p>
+                      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    </div>
+                    <!-- /.post-content -->
+                    <div class="post-footer d-md-flex flex-md-row justify-content-md-between align-items-center mt-8">
+                      <div>
+                        <ul class="list-unstyled tag-list mb-0">
+                          <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill mb-0">Still Life</a></li>
+                          <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill mb-0">Urban</a></li>
+                          <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill mb-0">Nature</a></li>
                         </ul>
+                      </div>
+                      <div class="mb-0 mb-md-2">
+                        <div class="dropdown share-dropdown btn-group">
+                          <button class="btn btn-sm btn-red rounded-pill btn-icon btn-icon-start dropdown-toggle mb-0 me-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="uil uil-share-alt"></i> Share </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#"><i class="uil uil-twitter"></i>Twitter</a>
+                            <a class="dropdown-item" href="#"><i class="uil uil-facebook-f"></i>Facebook</a>
+                            <a class="dropdown-item" href="#"><i class="uil uil-linkedin"></i>Linkedin</a>
+                          </div>
+                          <!--/.dropdown-menu -->
+                        </div>
+                        <!--/.share-dropdown -->
+                      </div>
                     </div>
-                    <ul class="bread-crumb">
-                        <li><a href="../">Beranda</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li>Detail blog</li>
-                    </ul>
+                    <!-- /.post-footer -->
+                  </article>
+                  <!-- /.post -->
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sidebar Page Container -->
-    <section class="sidebar-page-container">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="blog-single-post">
-                        <div class="top-content">
-                            <div class="image mb-5"><img src="{{ asset('storage/'.$blog->gambar_blog) }}" alt="" /></div>
-                            <p>{!! $blog->konten !!}</p>
-                        </div>
-                        <!-- <div class="author-box">
-                            <div class="image"><img src="assets/images/resource/author-6.jpg" alt="" /></div>
-                            <div class="content">
-                                <h4>Robert Christopher</h4>
-                                <h5>Writer, Blogger, Tourist (www.governlia.org)</h5>
-                                <div class="text">Fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culp quis officia deserunt mollit anim id est laborum.</div>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="#"><span class="fab fa-twitter"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><span class="fab fa-google-plus-g"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
+                <!-- /.classic-view -->
+                <hr />
+                <div class="author-info d-md-flex align-items-center mb-3">
+                  <div class="d-flex align-items-center">
+                    <figure class="user-avatar"><img class="rounded-circle" alt="" src="./assets/img/avatars/u5.jpg" /></figure>
+                    <div>
+                      <h6><a href="#" class="link-dark">Nikolas Brooten</a></h6>
+                      <span class="post-meta fs-15">Sales Manager</span>
                     </div>
+                  </div>
+                  <div class="mt-3 mt-md-0 ms-auto">
+                    <a href="#" class="btn btn-sm btn-soft-ash rounded-pill btn-icon btn-icon-start mb-0"><i class="uil uil-file-alt"></i> All Posts</a>
+                  </div>
                 </div>
-                <div class="col-lg-4">
-                    <aside class="sidebar blog-sidebar sidebar-style-two">
-                        <div class="widget widget_search">
-                            <h3 class="widget-title">Cari</h3>
-                            <form action="/blog" autocomplete="off" class="search-form">
-                                <div class="form-group">
-                                    <input type="search" name="cari" placeholder="Cari Postingan ..."/>
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- <div class="widget widget_categories style-two">
-                            <h3 class="widget-title">Blog Categories</h3>
-                            <div class="widget-content">
-                                <ul class="categories-list">
-                                    <li><a href="blog-details.php">Business & Taxation</a></li>
-                                    <li><a href="blog-details.php">Law, Justice & Police</a></li>
-                                    <li class="current"><a href="blog-details.php"> Government & Elections</a></li>
-                                    <li><a href="blog-details.php">Pets & Wildlife Area</a></li>
-                                    <li><a href="blog-details.php">Employment & Jobs</a></li>
-                                </ul>
+                <!-- /.author-info -->
+                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac. Maecenas faucibus mollis interdum.</p>
+                <nav class="nav social">
+                  <a href="#"><i class="uil uil-twitter"></i></a>
+                  <a href="#"><i class="uil uil-facebook-f"></i></a>
+                  <a href="#"><i class="uil uil-dribbble"></i></a>
+                  <a href="#"><i class="uil uil-instagram"></i></a>
+                  <a href="#"><i class="uil uil-youtube"></i></a>
+                </nav>
+                <!-- /.social -->
+                <hr />
+                <h3 class="mb-6">You Might Also Like</h3>
+                <div class="swiper-container blog grid-view mb-16" data-margin="30" data-dots="true" data-items-md="2" data-items-xs="1">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <article>
+                          <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="./assets/img/photos/b4.jpg" alt="" /></a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <div class="post-category text-line">
+                              <a href="#" class="hover" rel="category">Coding</a>
                             </div>
-                        </div> -->
-                        <div class="widget widget_popular_post">
-                            <h3 class="widget-title">Postingan Terbaru</h3>
-
-                            @foreach($recentPosts as $post)
-                                
-                                <article class="post">
-                                    <figure class="post-thumb">
-                                        <a href="/blog/{{ $post->slug }}"><img src="{{ asset('storage/' . $post->gambar_blog) }}" alt="{{ $post->judul }}" /></a>
-                                    </figure>
-                                    <div class="content">
-                                        <h5>
-                                            <a href="/blog/{{ $post->slug }}"">{{ $post->judul }}</a>
-                                        </h5>
-                                        <div class="post-info"><i class="far fa-calendar-alt"></i>{{ $post->created_at->isoFormat('d MMMM Y') }}</div>
-                                    </div>
-                                </article>
-                            
-                            @endforeach
-
-                        </div>
-                        <!-- Tag-cloud Widget -->
-                        <!-- <div class="widget widget_tag_cloud">
-                            <h3 class="widget-title">Tags Cloud</h3>
-                            <ul class="clearfix">
-                                <li><a href="#">recreation</a></li>
-                                <li><a href="#">activities</a></li>
-                                <li><a href="#">administration</a></li>
-                                <li><a href="#">city</a></li>
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">municipal</a></li>
-                                <li><a href="#">tourists</a></li>
-                                <li><a href="#">food & Drink</a></li>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Ligula tristique quis risus</a></h2>
+                          </div>
+                          <!-- /.post-header -->
+                          <div class="post-footer">
+                            <ul class="post-meta mb-0">
+                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>14 Apr 2021</span></li>
+                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>4</a></li>
                             </ul>
-                        </div> -->
-                        <!-- Contact Widget two -->
-                        <!-- <div class="widget contact-widget-two" style="background-image: url(assets/images/resource/image-51.jpg)">
-                            <h3 class="widget-title">Municipal Complaints</h3>
-                            <div class="widget-content">
-                                <ul class="contact-info">
-                                    <li>
-                                        <a href="#"><i class="pe-7s-headphones"></i> Emergency 9922</a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:mail@governlia.net"><i class="pe-7s-mail-open"></i> mail@governlia.net</a>
-                                    </li>
-                                    <li>
-                                        <a href="tel:8526105599"><i class="pe-7s-call"></i> Call us 852-610-5599</a>
-                                    </li>
-                                </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /.post-footer -->
+                        </article>
+                        <!-- /article -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <article>
+                          <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="./assets/img/photos/b5.jpg" alt="" /></a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <div class="post-category text-line">
+                              <a href="#" class="hover" rel="category">Workspace</a>
                             </div>
-                        </div> -->
-                    </aside>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Nullam id dolor elit id nibh</a></h2>
+                          </div>
+                          <!-- /.post-header -->
+                          <div class="post-footer">
+                            <ul class="post-meta mb-0">
+                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>29 Mar 2021</span></li>
+                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /.post-footer -->
+                        </article>
+                        <!-- /article -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <article>
+                          <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="./assets/img/photos/b6.jpg" alt="" /></a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <div class="post-category text-line">
+                              <a href="#" class="hover" rel="category">Meeting</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Ultricies fusce porta elit</a></h2>
+                          </div>
+                          <!-- /.post-header -->
+                          <div class="post-footer">
+                            <ul class="post-meta mb-0">
+                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Feb 2021</span></li>
+                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /.post-footer -->
+                        </article>
+                        <!-- /article -->
+                      </div>
+                      <!--/.swiper-slide -->
+                      <div class="swiper-slide">
+                        <article>
+                          <figure class="overlay overlay-1 hover-scale rounded mb-5"><a href="#"> <img src="./assets/img/photos/b7.jpg" alt="" /></a>
+                            <figcaption>
+                              <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                          </figure>
+                          <div class="post-header">
+                            <div class="post-category text-line">
+                              <a href="#" class="hover" rel="category">Business Tips</a>
+                            </div>
+                            <!-- /.post-category -->
+                            <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark" href="./blog-post.html">Morbi leo risus porta eget</a></h2>
+                          </div>
+                          <div class="post-footer">
+                            <ul class="post-meta mb-0">
+                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>7 Jan 2021</span></li>
+                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>2</a></li>
+                            </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /.post-footer -->
+                        </article>
+                        <!-- /article -->
+                      </div>
+                      <!--/.swiper-slide -->
+                    </div>
+                    <!--/.swiper-wrapper -->
+                  </div>
+                  <!-- /.swiper -->
                 </div>
+                <!-- /.swiper-container -->
+                <hr />
+                <div id="comments">
+                  <h3 class="mb-6">5 Comments</h3>
+                  <ol id="singlecomments" class="commentlist">
+                    <li class="comment">
+                      <div class="comment-header d-md-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <figure class="user-avatar"><img class="rounded-circle" alt="" src="./assets/img/avatars/u1.jpg" /></figure>
+                          <div>
+                            <h6 class="comment-author"><a href="#" class="link-dark">Connor Gibson</a></h6>
+                            <ul class="post-meta">
+                              <li><i class="uil uil-calendar-alt"></i>14 Jan 2021</li>
+                            </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /div -->
+                        </div>
+                        <!-- /div -->
+                        <div class="mt-3 mt-md-0 ms-auto">
+                          <a href="#" class="btn btn-soft-ash btn-sm rounded-pill btn-icon btn-icon-start mb-0"><i class="uil uil-comments"></i> Reply</a>
+                        </div>
+                        <!-- /div -->
+                      </div>
+                      <!-- /.comment-header -->
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis integer posuere erat ante.</p>
+                    </li>
+                    <li class="comment">
+                      <div class="comment-header d-md-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <figure class="user-avatar"><img class="rounded-circle" alt="" src="./assets/img/avatars/u2.jpg" /></figure>
+                          <div>
+                            <h6 class="comment-author"><a href="#" class="link-dark">Nikolas Brooten</a></h6>
+                            <ul class="post-meta">
+                              <li><i class="uil uil-calendar-alt"></i>21 Feb 2021</li>
+                            </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /div -->
+                        </div>
+                        <!-- /div -->
+                        <div class="mt-3 mt-md-0 ms-auto">
+                          <a href="#" class="btn btn-soft-ash btn-sm rounded-pill btn-icon btn-icon-start mb-0"><i class="uil uil-comments"></i> Reply</a>
+                        </div>
+                        <!-- /div -->
+                      </div>
+                      <!-- /.comment-header -->
+                      <p>Quisque tristique tincidunt metus non aliquam. Quisque ac risus sit amet quam sollicitudin vestibulum vitae malesuada libero. Mauris magna elit, suscipit non ornare et, blandit a tellus. Pellentesque dignissim ornare faucibus mollis.</p>
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="comment-header d-md-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                              <figure class="user-avatar"><img class="rounded-circle" alt="" src="./assets/img/avatars/u3.jpg" /></figure>
+                              <div>
+                                <h6 class="comment-author"><a href="#" class="link-dark">Pearce Frye</a></h6>
+                                <ul class="post-meta">
+                                  <li><i class="uil uil-calendar-alt"></i>22 Feb 2021</li>
+                                </ul>
+                                <!-- /.post-meta -->
+                              </div>
+                              <!-- /div -->
+                            </div>
+                            <!-- /div -->
+                            <div class="mt-3 mt-md-0 ms-auto">
+                              <a href="#" class="btn btn-soft-ash btn-sm rounded-pill btn-icon btn-icon-start mb-0"><i class="uil uil-comments"></i> Reply</a>
+                            </div>
+                            <!-- /div -->
+                          </div>
+                          <!-- /.comment-header -->
+                          <p>Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis.</p>
+                          <ul class="children">
+                            <li class="comment">
+                              <div class="comment-header d-md-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                  <figure class="user-avatar"><img class="rounded-circle" alt="" src="./assets/img/avatars/u2.jpg" /></figure>
+                                  <div>
+                                    <h6 class="comment-author"><a href="#" class="link-dark">Nikolas Brooten</a></h6>
+                                    <ul class="post-meta">
+                                      <li><i class="uil uil-calendar-alt"></i>4 Apr 2021</li>
+                                    </ul>
+                                    <!-- /.post-meta -->
+                                  </div>
+                                  <!-- /div -->
+                                </div>
+                                <!-- /div -->
+                                <div class="mt-3 mt-md-0 ms-auto">
+                                  <a href="#" class="btn btn-soft-ash btn-sm rounded-pill btn-icon btn-icon-start mb-0"><i class="uil uil-comments"></i> Reply</a>
+                                </div>
+                                <!-- /div -->
+                              </div>
+                              <!-- /.comment-header -->
+                              <p>Nullam id dolor id nibh ultricies vehicula ut id. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia aenean bibendum nulla consectetur.</p>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="comment">
+                      <div class="comment-header d-md-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <figure class="user-avatar"><img class="rounded-circle" alt="" src="./assets/img/avatars/u4.jpg" /></figure>
+                          <div>
+                            <h6 class="comment-author"><a href="#" class="link-dark">Lou Bloxham</a></h6>
+                            <ul class="post-meta">
+                              <li><i class="uil uil-calendar-alt"></i>3 May 2021</li>
+                            </ul>
+                            <!-- /.post-meta -->
+                          </div>
+                          <!-- /div -->
+                        </div>
+                        <!-- /div -->
+                        <div class="mt-3 mt-md-0 ms-auto">
+                          <a href="#" class="btn btn-soft-ash btn-sm rounded-pill btn-icon btn-icon-start mb-0"><i class="uil uil-comments"></i> Reply</a>
+                        </div>
+                        <!-- /div -->
+                      </div>
+                      <!-- /.comment-header -->
+                      <p>Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </li>
+                  </ol>
+                </div>
+                <!-- /#comments -->
+                <hr />
+                <h3 class="mb-3">Would you like to share your thoughts?</h3>
+                <p class="mb-7">Your email address will not be published. Required fields are marked *</p>
+                <form class="comment-form">
+                  <div class="form-floating mb-4">
+                    <input type="text" class="form-control" placeholder="Name*" id="c-name">
+                    <label for="c-name">Name *</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input type="email" class="form-control" placeholder="Email*" id="c-email">
+                    <label for="c-email">Email*</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input type="text" class="form-control" placeholder="Website" id="c-web">
+                    <label for="c-web">Website</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <textarea name="textarea" class="form-control" placeholder="Comment" style="height: 150px"></textarea>
+                    <label>Comment *</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary rounded-pill mb-0">Submit</button>
+                </form>
+                <!-- /.comment-form -->
+              </div>
+              <!-- /.card-body -->
             </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.blog -->
         </div>
-    </section>
+        <!-- /column -->
+        <aside class="col-lg-4 sidebar mt-11 mt-lg-6">
+          <div class="widget">
+            <h4 class="widget-title mb-3">About Us</h4>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
+            <nav class="nav social">
+              <a href="#"><i class="uil uil-twitter"></i></a>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+              <a href="#"><i class="uil uil-dribbble"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+            <div class="clearfix"></div>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Popular Posts</h4>
+            <ul class="image-list">
+              <li>
+                <figure class="rounded"><a href="./blog-post.html"><img src="./assets/img/photos/a1.jpg" alt="" /></a></figure>
+                <div class="post-content">
+                  <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Magna Mollis Ultricies</a> </h6>
+                  <ul class="post-meta">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Mar 2021</span></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
+                </div>
+              </li>
+              <li>
+                <figure class="rounded"> <a href="./blog-post.html"><img src="./assets/img/photos/a2.jpg" alt="" /></a></figure>
+                <div class="post-content">
+                  <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Ornare Nullam Risus</a> </h6>
+                  <ul class="post-meta">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>16 Feb 2021</span></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
+                </div>
+              </li>
+              <li>
+                <figure class="rounded"><a href="./blog-post.html"><img src="./assets/img/photos/a3.jpg" alt="" /></a></figure>
+                <div class="post-content">
+                  <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Euismod Nullam Fusce</a> </h6>
+                  <ul class="post-meta">
+                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>8 Jan 2021</span></li>
+                    <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>5</a></li>
+                  </ul>
+                  <!-- /.post-meta -->
+                </div>
+              </li>
+            </ul>
+            <!-- /.image-list -->
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Categories</h4>
+            <ul class="unordered-list bullet-primary text-reset">
+              <li><a href="#">Teamwork (21)</a></li>
+              <li><a href="#">Ideas (19)</a></li>
+              <li><a href="#">Workspace (16)</a></li>
+              <li><a href="#">Coding (7)</a></li>
+              <li><a href="#">Meeting (12)</a></li>
+              <li><a href="#">Business Tips (14)</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Tags</h4>
+            <ul class="list-unstyled tag-list">
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Still Life</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Urban</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Nature</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Landscape</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Macro</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Fun</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Workshop</a></li>
+              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Photography</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title mb-3">Archive</h4>
+            <ul class="unordered-list bullet-primary text-reset">
+              <li><a href="#">February 2019</a></li>
+              <li><a href="#">January 2019</a></li>
+              <li><a href="#">December 2018</a></li>
+              <li><a href="#">November 2018</a></li>
+              <li><a href="#">October 2018</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column .sidebar -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /section -->
+  
 @endsection

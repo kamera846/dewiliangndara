@@ -82,6 +82,9 @@ Route::get('/blog/{blog:slug}', [BlogController::class, 'postDetails']);
 Route::get('/gallery', [GalleryController::class, 'landingPage']);
 
 
+Route::get('/blog-detail', function() {
+    return view('blog-details');
+});
 Route::get('/contact', [Contact::class, 'show']);
 Route::post('/contact', [Contact::class, 'sendMail']);
 
@@ -111,23 +114,23 @@ Route::put('/dashboard/social/{social}/update', [SocialController::class, 'updat
 Route::delete('/dashboard/social/{social}/delete', [SocialController::class, 'destroy']);
 
 
-Route::get('/about', function () {
-    $settings = Setting::get();
-    foreach ($settings as $setting) {
-        if ($setting->web_title !== null) {
-            return view('about', ['judul_halaman' => 'Tentang Kami | ' . $setting->web_title, 'settings' => Setting::get(), 'socials' => Social::get(), 'sections' => Section::get(), 'newBlogs' => Blog::latest('updated_at')->get()]);
-        } else {
-            return view('about', ['judul_halaman' => 'Tentang Kami', 'settings' => Setting::get(), 'socials' => Social::get(), 'sections' => Section::get(), 'newBlogs' => Blog::latest('updated_at')->get()]);
-        }
-    }
-});
-Route::get('/blog/slug', function () {
-    $settings = Setting::get();
-    foreach ($settings as $setting) {
-        if ($setting->web_title !== null) {
-            return view('blog-details', ['judul_halaman' => 'Judul Postingan | ' . $setting->web_title]);
-        } else {
-            return view('blog-details', ['judul_halaman' => 'Judul Postingan']);
-        }
-    }
-});
+// Route::get('/about', function () {
+//     $settings = Setting::get();
+//     foreach ($settings as $setting) {
+//         if ($setting->web_title !== null) {
+//             return view('about', ['judul_halaman' => 'Tentang Kami | ' . $setting->web_title, 'settings' => Setting::get(), 'socials' => Social::get(), 'sections' => Section::get(), 'newBlogs' => Blog::latest('updated_at')->get()]);
+//         } else {
+//             return view('about', ['judul_halaman' => 'Tentang Kami', 'settings' => Setting::get(), 'socials' => Social::get(), 'sections' => Section::get(), 'newBlogs' => Blog::latest('updated_at')->get()]);
+//         }
+//     }
+// });
+// Route::get('/blog/slug', function () {
+//     $settings = Setting::get();
+//     foreach ($settings as $setting) {
+//         if ($setting->web_title !== null) {
+//             return view('blog-details', ['judul_halaman' => 'Judul Postingan | ' . $setting->web_title]);
+//         } else {
+//             return view('blog-details', ['judul_halaman' => 'Judul Postingan']);
+//         }
+//     }
+// });
