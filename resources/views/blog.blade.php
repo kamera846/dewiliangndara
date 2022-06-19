@@ -78,7 +78,7 @@
           </div>
           <!-- /.blog -->
             <div class="row justify-content-center">
-                <div class="col">
+                <div class="col ">
                     <ul class="pagination">
                       <li class="page-item disabled">
                         <a class="page-link" href="#" aria-label="Previous">
@@ -99,23 +99,9 @@
             </div>
         </div>
         <!-- /column -->
-        <aside class="col-lg-4 sidebar mt-8 mt-lg-6">
+        <aside class="col-lg-4 sidebar mt-8 mt-lg-6"> 
           <div class="widget">
-            <h4 class="widget-title mb-3">About Us</h4>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.</p>
-            <nav class="nav social">
-              <a href="#"><i class="uil uil-twitter"></i></a>
-              <a href="#"><i class="uil uil-facebook-f"></i></a>
-              <a href="#"><i class="uil uil-dribbble"></i></a>
-              <a href="#"><i class="uil uil-instagram"></i></a>
-              <a href="#"><i class="uil uil-youtube"></i></a>
-            </nav>
-            <!-- /.social -->
-            <div class="clearfix"></div>
-          </div>
-          <!-- /.widget -->
-          <div class="widget">
-            <h4 class="widget-title mb-3">Popular Posts</h4>
+            <h4 class="widget-title mb-3">Recent Post</h4>
             <ul class="image-list">
               <li>
                 <figure class="rounded"><a href="./blog-post.html"><img src="./assets/img/photos/a1.jpg" alt="" /></a></figure>
@@ -152,43 +138,6 @@
               </li>
             </ul>
             <!-- /.image-list -->
-          </div>
-          <!-- /.widget -->
-          <div class="widget">
-            <h4 class="widget-title mb-3">Categories</h4>
-            <ul class="unordered-list bullet-primary text-reset">
-              <li><a href="#">Teamwork (21)</a></li>
-              <li><a href="#">Ideas (19)</a></li>
-              <li><a href="#">Workspace (16)</a></li>
-              <li><a href="#">Coding (7)</a></li>
-              <li><a href="#">Meeting (12)</a></li>
-              <li><a href="#">Business Tips (14)</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-          <div class="widget">
-            <h4 class="widget-title mb-3">Tags</h4>
-            <ul class="list-unstyled tag-list">
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Still Life</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Urban</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Nature</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Landscape</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Macro</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Fun</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Workshop</a></li>
-              <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Photography</a></li>
-            </ul>
-          </div>
-          <!-- /.widget -->
-          <div class="widget">
-            <h4 class="widget-title mb-3">Archive</h4>
-            <ul class="unordered-list bullet-primary text-reset">
-              <li><a href="#">February 2019</a></li>
-              <li><a href="#">January 2019</a></li>
-              <li><a href="#">December 2018</a></li>
-              <li><a href="#">November 2018</a></li>
-              <li><a href="#">October 2018</a></li>
-            </ul>
           </div>
           <!-- /.widget -->
         </aside>
