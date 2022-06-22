@@ -7,11 +7,6 @@
         <div class="row">
             <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
                 <div class="post-header">
-                    <div class="post-category text-line">
-                        <a href="#" class="text-reset" rel="category"
-                            >Teamwork</a
-                        >
-                    </div>
                     <!-- /.post-category -->
                     <h1 class="mb-4">
                         Commodo Dolor Bibendum Parturient Cursus Mollis
@@ -23,21 +18,7 @@
                         </li>
                         <li class="post-author">
                             <i class="uil uil-user"></i
-                            ><a href="#" class="text-reset"
-                                ><span>By Sandbox</span></a
-                            >
-                        </li>
-                        <li class="post-comments">
-                            <i class="uil uil-comment"></i
-                            ><a href="#" class="text-reset"
-                                >3<span> Comments</span></a
-                            >
-                        </li>
-                        <li class="post-likes">
-                            <i class="uil uil-heart-alt"></i
-                            ><a href="#" class="text-reset"
-                                >3<span> Likes</span></a
-                            >
+                            ><span>By Sandbox</span>
                         </li>
                     </ul>
                     <!-- /.post-meta -->
@@ -59,10 +40,11 @@
                         <input
                             id="search-form"
                             type="text"
+                            name="search"
                             class="form-control"
                             placeholder="Search"
                         />
-                        <label for="search-form">Search</label>
+                        <label for="search-form">Cari artikel..</label>
                     </div>
                 </form>
                 <!-- /.search-form -->
@@ -268,7 +250,7 @@
                 <!-- /.blog -->
             </div>
             <!-- /column -->
-            <aside class="col-lg-4 sidebar mt-11 mt-lg-6">
+            <aside class="col-lg-4 sidebar">
                 <div class="widget">
                     <h4 class="widget-title mb-3">Popular Posts</h4>
                     <ul class="image-list">
@@ -290,11 +272,6 @@
                                     <li class="post-date">
                                         <i class="uil uil-calendar-alt"></i
                                         ><span>26 Mar 2021</span>
-                                    </li>
-                                    <li class="post-comments">
-                                        <a href="#"
-                                            ><i class="uil uil-comment"></i>3</a
-                                        >
                                     </li>
                                 </ul>
                                 <!-- /.post-meta -->
@@ -319,11 +296,6 @@
                                         <i class="uil uil-calendar-alt"></i
                                         ><span>16 Feb 2021</span>
                                     </li>
-                                    <li class="post-comments">
-                                        <a href="#"
-                                            ><i class="uil uil-comment"></i>6</a
-                                        >
-                                    </li>
                                 </ul>
                                 <!-- /.post-meta -->
                             </div>
@@ -346,11 +318,6 @@
                                     <li class="post-date">
                                         <i class="uil uil-calendar-alt"></i
                                         ><span>8 Jan 2021</span>
-                                    </li>
-                                    <li class="post-comments">
-                                        <a href="#"
-                                            ><i class="uil uil-comment"></i>5</a
-                                        >
                                     </li>
                                 </ul>
                                 <!-- /.post-meta -->

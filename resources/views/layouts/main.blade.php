@@ -101,7 +101,7 @@
                                         >info@email.com</a
                                     >
                                     <br />
-                                    00 (123) 456 78 90 <br />
+                                    +62 812 4614 8901 <br />
                                     <nav class="nav social social-white mt-4">
                                         <a href="#"
                                             ><i class="uil uil-twitter"></i
@@ -110,13 +110,7 @@
                                             ><i class="uil uil-facebook-f"></i
                                         ></a>
                                         <a href="#"
-                                            ><i class="uil uil-dribbble"></i
-                                        ></a>
-                                        <a href="#"
                                             ><i class="uil uil-instagram"></i
-                                        ></a>
-                                        <a href="#"
-                                            ><i class="uil uil-youtube"></i
                                         ></a>
                                     </nav>
                                     <!-- /.social -->
@@ -152,67 +146,14 @@
         <!-- end content wrapper -->
 
         <footer class="bg-dark text-inverse">
-            <div class="container pt-15 pb-12 text-center">
+            <div class="container pt-12 pb-9 text-center">
                 <div class="row mt-md-7 mt-lg-0">
                     <div class="col-xl-10 mx-auto">
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <div class="widget">
-                                    <h4 class="widget-title text-white">
-                                        Address
-                                    </h4>
-                                    <address>
-                                        Moonshine St. 14/05
-                                        <br class="d-none d-md-block" />
-                                        Light City, London, UK
-                                    </address>
-                                </div>
-                                <!-- /.widget -->
-                            </div>
-                            <!--/column -->
-                            <div class="col-md-4">
-                                <div class="widget">
-                                    <h4 class="widget-title text-white">
-                                        Phone
-                                    </h4>
-                                    <p>
-                                        00 (123) 456 78 90 <br />00 (987) 654 32
-                                        10
-                                    </p>
-                                </div>
-                                <!-- /.widget -->
-                            </div>
-                            <!--/column -->
-                            <div class="col-md-4">
-                                <div class="widget">
-                                    <h4 class="widget-title text-white">
-                                        E-mail
-                                    </h4>
-                                    <p>
-                                        <a
-                                            href="mailto:sandbox@email.com"
-                                            class="link-body"
-                                            >sandbox@email.com</a
-                                        >
-                                        <br class="d-none d-md-block" /><a
-                                            href="mailto:help@sandbox.com"
-                                            class="link-body"
-                                            >help@sandbox.com</a
-                                        >
-                                    </p>
-                                </div>
-                                <!-- /.widget -->
-                            </div>
-                            <!--/column -->
-                        </div>
-                        <!--/.row -->
-                        <p>© 2021 Sandbox. All rights reserved.</p>
+                        <p>© {{ date('Y') }} Liang Ndara - powered by <a href="http://jongkreatif.id" target="_blank">JongKreatif</a>.</p>
                         <nav class="nav social justify-content-center">
                             <a href="#"><i class="uil uil-twitter"></i></a>
                             <a href="#"><i class="uil uil-facebook-f"></i></a>
-                            <a href="#"><i class="uil uil-dribbble"></i></a>
                             <a href="#"><i class="uil uil-instagram"></i></a>
-                            <a href="#"><i class="uil uil-youtube"></i></a>
                         </nav>
                         <!-- /.social -->
                     </div>

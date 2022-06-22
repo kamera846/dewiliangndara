@@ -72,84 +72,40 @@
         </div>
     </div>
 </section>
-<section class="wrapper bg-soft-primary mt-5">
-    <div class="contianer pt-14 pt-md-14 pb-2 pb-md-2">
-        <div class="row bg-soft-">
-            <div
-                class="col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto text-center"
-            >
-                <h2 class="fs-15 text-uppercase text-muted mb-3">
-                    What We Do?
-                </h2>
-                <h3 class="display-4 mb-10">
-                    The service we offer is specifically designed to meet your
-                    needs.
-                </h3>
-            </div>
-            <!-- /column -->
-        </div>
+<section class="wrapper bg-soft-primary py-10">
+    <div class="container">
         <!-- /.row -->
-        <div class="row gx-md-8 gy-8 text-center mb-14 mb-md-17">
-            <div class="col-md-6 col-xl-3">
-                <div
-                    class="icon btn btn-circle btn-lg btn-primary disabled mb-5"
-                >
-                    <i class="uil uil-phone-volume"></i>
-                </div>
-                <h4>24/7 Support</h4>
-                <p class="mb-3">
-                    Etiam porta sem malesuada magna mollis euismod. Donec
-                    ullamcorper nulla non metus auctor fringilla.
+        <div class="row gx-md-8 gy-8 text-center">
+            <div class="col-md-6 col-lg-3">
+                <h4 class="text-start">Spot Wisata</h4>
+                <p class="text-start lead">
+                    Gua Dan air Terjun Liang Kantor, Gua Liang Niki, Puncak Melo , View point puncak watu api, Tracking Gunung Mbeliling, Kebun Tradisional, dan Sanggar Budaya.
                 </p>
-                <a href="#" class="more hover">Learn More</a>
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-                <div
-                    class="icon btn btn-circle btn-lg btn-primary disabled mb-5"
-                >
-                    <i class="uil uil-shield-exclamation"></i>
-                </div>
-                <h4>Secure Payments</h4>
-                <p class="mb-3">
-                    Etiam porta sem malesuada magna mollis euismod. Donec
-                    ullamcorper nulla non metus auctor fringilla.
+            <div class="col-lg-1"></div>
+            <div class="col-md-6 col-lg-3">
+                <h4 class="text-start">Layanan & Fasilitas</h4>
+                <p class="text-start lead">
+                    Areal Parkir, Balai Pertemuan, Homestay/Rumah Tinggal/Guest House, Kamar Mandi Umum, Kios Souvenir, Kuliner, Warung, Tempat Makan, Selfie Area, Spot Foto
                 </p>
-                <a href="#" class="more hover">Learn More</a>
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-                <div
-                    class="icon btn btn-circle btn-lg btn-primary disabled mb-5"
-                >
-                    <i class="uil uil-laptop-cloud"></i>
-                </div>
-                <h4>Daily Updates</h4>
-                <p class="mb-3">
-                    Etiam porta sem malesuada magna mollis euismod. Donec
-                    ullamcorper nulla non metus auctor fringilla.
+            <div class="col-lg-1"></div>
+            <div class="col-md-6 col-lg-3">
+                <h4 class="text-start">Souvenir & Hasil Bumi</h4>
+                <p class="text-start lead">
+                    Anyaman pandan dan tenunan songket. Buah durian, rambutan, salak, nangka, manggis, sayuran hidroponik, advokat, nenas, dan kemiri.             
                 </p>
-                <a href="#" class="more hover">Learn More</a>
             </div>
             <!--/column -->
-            <div class="col-md-6 col-xl-3">
-                <div
-                    class="icon btn btn-circle btn-lg btn-primary disabled mb-5"
-                >
-                    <i class="uil uil-chart-line"></i>
-                </div>
-                <h4>Market Research</h4>
-                <p class="mb-3">
-                    Etiam porta sem malesuada magna mollis euismod. Donec
-                    ullamcorper nulla non metus auctor fringilla.
-                </p>
-                <a href="#" class="more hover">Learn More</a>
-            </div>
-            <!--/column -->
+            <div class="col-lg-1"></div>
         </div>
         <!--/.row -->
     </div>
+    <!-- /.container -->
 </section>
+<!-- /section -->
 <section class="wrapper bg-light mt-3">
     <div class="container pt-8 pt-md-14">
         <div
@@ -181,68 +137,22 @@
             </div>
             <!--/column -->
             <div class="col-lg-5 col-xl-4 offset-lg-1">
-                <h2 class="display-4 mb-3">How It Works?</h2>
-                <p class="lead fs-lg mb-6">
-                    So here are three working steps why our valued customers
-                    choose us.
+                <h2 class="mb-3">Sejarah Liang Ndara</h2>
+                <p class="lead">
+                    "Dahulu kala masyarakat suku <i>Liang Ndara</i> Selalu mengharapkan kehidupannya tergantung apa yang disediahkan oleh alam, baik kebutuhan makanan maupun untuk kebutuhan sehari hari.Ketika suku <i>Liang Ndara</i> meniggalkan tempat tingal mereka di gua <i>Liang Ndara</i> mereka menelusuri lereng gunung Mbeliling untuk mencari tempat tingal baru guna untuk menetap.
                 </p>
-                <div class="d-flex flex-row mb-6">
-                    <div>
-                        <span
-                            class="icon btn btn-circle btn-primary disabled me-5"
-                            ><span class="number fs-18">1</span></span
-                        >
-                    </div>
-                    <div>
-                        <h4 class="mb-1">Collect Ideas</h4>
-                        <p class="mb-0">
-                            Nulla vitae elit libero pharetra augue dapibus.
-                            Praesent commodo cursus.
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row mb-6">
-                    <div>
-                        <span
-                            class="icon btn btn-circle btn-primary disabled me-5"
-                            ><span class="number fs-18">2</span></span
-                        >
-                    </div>
-                    <div>
-                        <h4 class="mb-1">Data Analysis</h4>
-                        <p class="mb-0">
-                            Vivamus sagittis lacus vel augue laoreet. Etiam
-                            porta sem malesuada magna.
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex flex-row">
-                    <div>
-                        <span
-                            class="icon btn btn-circle btn-primary disabled me-5"
-                            ><span class="number fs-18">3</span></span
-                        >
-                    </div>
-                    <div>
-                        <h4 class="mb-1">Finalize Product</h4>
-                        <p class="mb-0">
-                            Cras mattis consectetur purus sit amet. Aenean
-                            lacinia bibendum nulla sed.
-                        </p>
-                    </div>
-                </div>
+                <p  class="lead mb-6">
+                    Alhasil mereka menemukan sebuah gua dan di depan gua tersebut ada air terjun, penemuan gua ini konon diberitahukan oleh sepasang burung tekurku di musim kemarau, Bunyi sepasang burung tekurkur itu menuntun mereka mendekati mulut gua. Dan ketika mereka 
+                </p>
+                <a href="/about" class="btn btn-primary">Selengkapnya</a>
             </div>
             <!--/column -->
         </div>
         <!--/.row -->
         <div class="row">
             <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">
-                    Latest Galleries
-                </h2>
-                <h3 class="display-4 mb-10">
-                    Check out some of our awesome projects with creative ideas
-                    and great design.
+                <h3 class="mb-10">
+                    Galeri Terbaru
                 </h3>
             </div>
             <!-- /column -->
@@ -250,328 +160,151 @@
         <!-- /.row -->
     </div>
     <!-- /.container -->
-    <div class="container-fluid px-md-6 py-4 py-md-8 mb-8">
-        <div
-            class="swiper-container grid-view mb-6 swiper-container-0"
-            data-margin="30"
-            data-dots="true"
-            data-items-xl="3"
-            data-items-md="2"
-            data-items-xs="1"
-        >
+    <div class="container mb-15">
+        <div class="grid grid-view projects-masonry">
             <div
-                class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+                class="row gx-md-8 gy-10 gy-md-13 isotope"
+                style="position: relative; height: 1147.05px"
             >
                 <div
-                    class="swiper-wrapper"
-                    id="swiper-wrapper-38ece5f5e2c97e5d"
-                    aria-live="off"
-                    style="
-                        cursor: grab;
-                        transform: translate3d(0px, 0px, 0px);
-                        transition-duration: 0ms;
-                    "
+                    class="project item col-md-6 col-xl-4 product"
+                    style="position: absolute; left: 0%; top: 0px"
                 >
-                    <div
-                        class="swiper-slide swiper-slide-active"
-                        role="group"
-                        aria-label="1 / 6"
-                        style="width: 450px; margin-right: 30px"
-                    >
-                        <figure class="rounded mb-6">
-                            <img
-                                src="../../assets/img/photos/pd7.jpg"
-                                srcset="../../assets/img/photos/pd7@2x.jpg 2x"
-                                alt=""
-                            /><a
-                                class="item-link"
-                                href="../../assets/img/photos/pd7-full.jpg"
-                                data-glightbox=""
-                                data-gallery="projects-group"
-                                ><i class="uil uil-focus-add"></i
-                            ></a>
+                    <figure class="lift rounded mb-6">
+                        <a href="../../assets/img/photos/cs16.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs16.jpg" alt=""/>
+                        </a>
                         </figure>
-                        <div
-                            class="project-details d-flex justify-content-center flex-column"
-                        >
-                            <div class="post-header">
-                                <h2 class="post-title h3">
-                                    <a
-                                        href="../../single-project.html"
-                                        class="link-dark"
-                                        >Cras Fermentum Sem</a
-                                    >
-                                </h2>
-                                <div class="post-category text-ash">
-                                    Stationary
-                                </div>
-                            </div>
-                            <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                    </div>
-                    <!--/.swiper-slide -->
                     <div
-                        class="swiper-slide swiper-slide-next"
-                        role="group"
-                        aria-label="2 / 6"
-                        style="width: 450px; margin-right: 30px"
+                        class="project-details d-flex justify-content-center flex-column"
                     >
-                        <figure class="rounded mb-6">
-                            <img
-                                src="../../assets/img/photos/pd8.jpg"
-                                srcset="../../assets/img/photos/pd8@2x.jpg 2x"
-                                alt=""
-                            /><a
-                                class="item-link"
-                                href="../../assets/img/photos/pd8-full.jpg"
-                                data-glightbox=""
-                                data-gallery="projects-group"
-                                ><i class="uil uil-focus-add"></i
-                            ></a>
-                        </figure>
-                        <div
-                            class="project-details d-flex justify-content-center flex-column"
-                        >
-                            <div class="post-header">
-                                <h2 class="post-title h3">
-                                    <a
-                                        href="../../single-project2.html"
-                                        class="link-dark"
-                                        >Mollis Ipsum Mattis</a
-                                    >
-                                </h2>
-                                <div class="post-category text-ash">
-                                    Magazine, Book
-                                </div>
-                            </div>
-                            <!-- /.post-header -->
+                        <div class="post-header">
+                            <h3 class="h5">Cras Fermentum Sem</h3>
                         </div>
-                        <!-- /.project-details -->
+                        <!-- /.post-header -->
                     </div>
-                    <!--/.swiper-slide -->
-                    <div
-                        class="swiper-slide"
-                        style="width: 450px; margin-right: 30px"
-                        role="group"
-                        aria-label="3 / 6"
-                    >
-                        <figure class="rounded mb-6">
-                            <img
-                                src="../../assets/img/photos/pd9.jpg"
-                                srcset="../../assets/img/photos/pd9@2x.jpg 2x"
-                                alt=""
-                            /><a
-                                class="item-link"
-                                href="../../assets/img/photos/pd9-full.jpg"
-                                data-glightbox=""
-                                data-gallery="projects-group"
-                                ><i class="uil uil-focus-add"></i
-                            ></a>
-                        </figure>
-                        <div
-                            class="project-details d-flex justify-content-center flex-column"
-                        >
-                            <div class="post-header">
-                                <h2 class="post-title h3">
-                                    <a
-                                        href="../../single-project3.html"
-                                        class="link-dark"
-                                        >Ipsum Ultricies Cursus</a
-                                    >
-                                </h2>
-                                <div class="post-category text-ash">
-                                    Packaging
-                                </div>
-                            </div>
-                            <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                    </div>
-                    <!--/.swiper-slide -->
-                    <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="4 / 6"
-                        style="width: 450px; margin-right: 30px"
-                    >
-                        <figure class="rounded mb-6">
-                            <img
-                                src="../../assets/img/photos/pd10.jpg"
-                                srcset="../../assets/img/photos/pd10@2x.jpg 2x"
-                                alt=""
-                            /><a
-                                class="item-link"
-                                href="../../assets/img/photos/pd10-full.jpg"
-                                data-glightbox=""
-                                data-gallery="projects-group"
-                                ><i class="uil uil-focus-add"></i
-                            ></a>
-                        </figure>
-                        <div
-                            class="project-details d-flex justify-content-center flex-column"
-                        >
-                            <div class="post-header">
-                                <h2 class="post-title h3">
-                                    <a
-                                        href="../../single-project.html"
-                                        class="link-dark"
-                                        >Inceptos Euismod Egestas</a
-                                    >
-                                </h2>
-                                <div class="post-category text-ash">
-                                    Stationary, Branding
-                                </div>
-                            </div>
-                            <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                    </div>
-                    <!--/.swiper-slide -->
-                    <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="5 / 6"
-                        style="width: 450px; margin-right: 30px"
-                    >
-                        <figure class="rounded mb-6">
-                            <img
-                                src="../../assets/img/photos/pd11.jpg"
-                                srcset="../../assets/img/photos/pd11@2x.jpg 2x"
-                                alt=""
-                            /><a
-                                class="item-link"
-                                href="../../assets/img/photos/pd11-full.jpg"
-                                data-glightbox=""
-                                data-gallery="projects-group"
-                                ><i class="uil uil-focus-add"></i
-                            ></a>
-                        </figure>
-                        <div
-                            class="project-details d-flex justify-content-center flex-column"
-                        >
-                            <div class="post-header">
-                                <h2 class="post-title h3">
-                                    <a
-                                        href="../../single-project2.html"
-                                        class="link-dark"
-                                        >Ipsum Mollis Vulputate</a
-                                    >
-                                </h2>
-                                <div class="post-category text-ash">
-                                    Packaging
-                                </div>
-                            </div>
-                            <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                    </div>
-                    <!--/.swiper-slide -->
-                    <div
-                        class="swiper-slide"
-                        role="group"
-                        aria-label="6 / 6"
-                        style="width: 450px; margin-right: 30px"
-                    >
-                        <figure class="rounded mb-6">
-                            <img
-                                src="../../assets/img/photos/pd12.jpg"
-                                srcset="../../assets/img/photos/pd12@2x.jpg 2x"
-                                alt=""
-                            /><a
-                                class="item-link"
-                                href="../../assets/img/photos/pd12-full.jpg"
-                                data-glightbox=""
-                                data-gallery="projects-group"
-                                ><i class="uil uil-focus-add"></i
-                            ></a>
-                        </figure>
-                        <div
-                            class="project-details d-flex justify-content-center flex-column"
-                        >
-                            <div class="post-header">
-                                <h2 class="post-title h3">
-                                    <a
-                                        href="../../single-project3.html"
-                                        class="link-dark"
-                                        >Porta Ornare Cras</a
-                                    >
-                                </h2>
-                                <div class="post-category text-ash">
-                                    Branding
-                                </div>
-                            </div>
-                            <!-- /.post-header -->
-                        </div>
-                        <!-- /.project-details -->
-                    </div>
-                    <!--/.swiper-slide -->
+                    <!-- /.project-details -->
                 </div>
-                <!--/.swiper-wrapper -->
-                <span
-                    class="swiper-notification"
-                    aria-live="assertive"
-                    aria-atomic="true"
-                ></span
-                ><span
-                    class="swiper-notification"
-                    aria-live="assertive"
-                    aria-atomic="true"
-                ></span>
-            </div>
-            <!-- /.swiper -->
-            <div class="swiper-controls">
+                <!-- /.project -->
                 <div
-                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                    class="project item col-md-6 col-xl-4 workshop"
+                    style="position: absolute; left: 33.3333%; top: 0px"
                 >
-                    <span
-                        class="swiper-pagination-bullet swiper-pagination-bullet-active"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Go to slide 1"
-                        aria-current="true"
-                    ></span
-                    ><span
-                        class="swiper-pagination-bullet"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Go to slide 2"
-                    ></span
-                    ><span
-                        class="swiper-pagination-bullet"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Go to slide 3"
-                    ></span
-                    ><span
-                        class="swiper-pagination-bullet"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Go to slide 4"
-                    ></span
-                    ><span
-                        class="swiper-pagination-bullet"
-                        tabindex="0"
-                        role="button"
-                        aria-label="Go to slide 5"
-                    ></span>
+                    <figure class="lift rounded mb-6">
+                        <a href="../../assets/img/photos/cs17.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs17.jpg" alt=""/>
+                        </a>
+                        </figure>
+                    <div
+                        class="project-details d-flex justify-content-center flex-column"
+                    >
+                        <div class="post-header">
+                            <h3 class="h5">Mollis Ipsum Mattis</h3>
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /.project-details -->
                 </div>
+                <!-- /.project -->
+                <div
+                    class="project item col-md-6 col-xl-4 still-life"
+                    style="position: absolute; left: 66.6667%; top: 0px"
+                >
+                    <figure class="lift rounded mb-6">
+                        <a href="../../assets/img/photos/cs18.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs18.jpg" alt=""/>
+                        </a>
+                        </figure>
+                    <div
+                        class="project-details d-flex justify-content-center flex-column"
+                    >
+                        <div class="post-header">
+                            <h3 class="h5">
+                                Ipsum Ultricies Cursus
+                            </h3>
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /.project-details -->
+                </div>
+                <!-- /.project -->
+                <div
+                    class="project item col-md-6 col-xl-4 product"
+                    style="position: absolute; left: 66.6667%; top: 499.812px"
+                >
+                    <figure class="lift rounded mb-6">
+                        <a href="../../assets/img/photos/cs20.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs20.jpg" alt=""/>
+                        </a>
+                        </figure>
+                    <div
+                        class="project-details d-flex justify-content-center flex-column"
+                    >
+                        <div class="post-header">
+                            <h3 class="h5">
+                                Inceptos Euismod Egestas
+                            </h3>
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /.project-details -->
+                </div>
+                <!-- /.project -->
+                <div
+                    class="project item col-md-6 col-xl-4 product"
+                    style="position: absolute; left: 0%; top: 581.125px"
+                >
+                    <figure class="lift rounded mb-6">
+                        <a href="../../assets/img/photos/cs19.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs19.jpg" alt=""/>
+                        </a>
+                        </figure>
+                    <div
+                        class="project-details d-flex justify-content-center flex-column"
+                    >
+                        <div class="post-header">
+                            <h3 class="h5">
+                                Sollicitudin Ornare Porta
+                            </h3>
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /.project-details -->
+                </div>
+                <!-- /.project -->
+                <div
+                    class="project item col-md-6 col-xl-4 workshop"
+                    style="position: absolute; left: 33.3333%; top: 634.797px"
+                >
+                    <figure class="lift rounded mb-6">
+                        <a href="../../assets/img/photos/cs21.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs21.jpg" alt=""/>
+                        </a>
+                        </figure>
+                    <div
+                        class="project-details d-flex justify-content-center flex-column"
+                    >
+                        <div class="post-header">
+                            <h3 class="h5">
+                                Ipsum Mollis Vulputate
+                            </h3>
+                        </div>
+                        <!-- /.post-header -->
+                    </div>
+                    <!-- /.project-details -->
+                </div>
+                <!-- /.project -->
             </div>
-            <div class="swiper-controls">
-                <div class="swiper-pagination"></div>
-            </div>
+            <!-- /.row -->
         </div>
+        <!-- /.grid -->
     </div>
-    <!-- /.container-fluid -->
+    <!-- /.content-wrapper -->
     <div class="container pt-10 pt-md-12 pb-13 pb-md-15">
         <div class="row mb-5">
             <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">
-                    Latest Blog Post
-                </h2>
-                <h3 class="display-4 mb-10">
-                    Check out some of our awesome projects with creative ideas
-                    and great design.
+                <h3 class="mb-10">
+                    Artikel Terbaru
                 </h3>
             </div>
             <!-- /column -->
@@ -592,24 +325,16 @@
                                             alt=""
                                     /></a>
                                     <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
+                                        <h5 class="from-top mb-0">Selengkapnya</h5>
                                     </figcaption>
                                 </figure>
                                 <div class="card-body">
                                     <div class="post-header">
-                                        <div class="post-category text-line">
-                                            <a
-                                                href="#"
-                                                class="hover"
-                                                rel="category"
-                                                >Workspace</a
-                                            >
-                                        </div>
                                         <!-- /.post-category -->
                                         <h2 class="post-title h3 mt-1 mb-3">
                                             <a
                                                 class="link-dark"
-                                                href="./blog-post.html"
+                                                href="/blog-detail"
                                                 >Nullam id dolor elit id nibh</a
                                             >
                                         </h2>
@@ -633,20 +358,6 @@
                                             <i class="uil uil-calendar-alt"></i
                                             ><span>29 Mar 2021</span>
                                         </li>
-                                        <li class="post-comments">
-                                            <a href="#"
-                                                ><i class="uil uil-comment"></i
-                                                >3</a
-                                            >
-                                        </li>
-                                        <li class="post-likes ms-auto">
-                                            <a href="#"
-                                                ><i
-                                                    class="uil uil-heart-alt"
-                                                ></i
-                                                >3</a
-                                            >
-                                        </li>
                                     </ul>
                                     <!-- /.post-meta -->
                                 </div>
@@ -666,24 +377,15 @@
                                             alt=""
                                     /></a>
                                     <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
+                                        <h5 class="from-top mb-0">Selengkapnya</h5>
                                     </figcaption>
                                 </figure>
                                 <div class="card-body">
                                     <div class="post-header">
-                                        <div class="post-category text-line">
-                                            <a
-                                                href="#"
-                                                class="hover"
-                                                rel="category"
-                                                >Meeting</a
-                                            >
-                                        </div>
-                                        <!-- /.post-category -->
                                         <h2 class="post-title h3 mt-1 mb-3">
                                             <a
                                                 class="link-dark"
-                                                href="./blog-post.html"
+                                                href="/blog-detail"
                                                 >Ultricies fusce porta elit</a
                                             >
                                         </h2>
@@ -707,20 +409,6 @@
                                             <i class="uil uil-calendar-alt"></i
                                             ><span>26 Feb 2021</span>
                                         </li>
-                                        <li class="post-comments">
-                                            <a href="#"
-                                                ><i class="uil uil-comment"></i
-                                                >6</a
-                                            >
-                                        </li>
-                                        <li class="post-likes ms-auto">
-                                            <a href="#"
-                                                ><i
-                                                    class="uil uil-heart-alt"
-                                                ></i
-                                                >3</a
-                                            >
-                                        </li>
                                     </ul>
                                     <!-- /.post-meta -->
                                 </div>
@@ -740,24 +428,15 @@
                                             alt=""
                                     /></a>
                                     <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
+                                        <h5 class="from-top mb-0">Selengkapnya</h5>
                                     </figcaption>
                                 </figure>
                                 <div class="card-body">
                                     <div class="post-header">
-                                        <div class="post-category text-line">
-                                            <a
-                                                href="#"
-                                                class="hover"
-                                                rel="category"
-                                                >Business Tips</a
-                                            >
-                                        </div>
-                                        <!-- /.post-category -->
                                         <h2 class="post-title h3 mt-1 mb-3">
                                             <a
                                                 class="link-dark"
-                                                href="./blog-post.html"
+                                                href="/blog-detail"
                                                 >Morbi leo risus porta eget</a
                                             >
                                         </h2>
@@ -780,20 +459,6 @@
                                             <i class="uil uil-calendar-alt"></i
                                             ><span>7 Jan 2021</span>
                                         </li>
-                                        <li class="post-comments">
-                                            <a href="#"
-                                                ><i class="uil uil-comment"></i
-                                                >2</a
-                                            >
-                                        </li>
-                                        <li class="post-likes ms-auto">
-                                            <a href="#"
-                                                ><i
-                                                    class="uil uil-heart-alt"
-                                                ></i
-                                                >5</a
-                                            >
-                                        </li>
                                     </ul>
                                     <!-- /.post-meta -->
                                 </div>
@@ -814,10 +479,9 @@
     <div class="container pt-7 pt-md-9 pb-13 pb-md-15">
         <div class="row mb-7">
             <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Contact Us</h2>
-                <h3 class="display-4 mb-10">
-                    Check out some of our awesome projects with creative ideas
-                    and great design.
+                <h2 class="fs-15 text-uppercase text-muted mb-3">Kontak Kami</h2>
+                <h3 class="mb-10">
+                    Sekiranya anda punya pertanyaan, atau saran supaya kami lebih baik, silahkan menghubungi kami.
                 </h3>
             </div>
             <!-- /column -->
@@ -830,8 +494,8 @@
                         <form
                             class="contact-form needs-validation"
                             method="post"
-                            action="../../assets/php/contact.php"
-                            novalidate=""
+                            action="./assets/php/contact.php"
+                            novalidate
                         >
                             <div class="messages"></div>
                             <div class="row gx-4">
@@ -842,39 +506,17 @@
                                             type="text"
                                             name="name"
                                             class="form-control"
-                                            placeholder="Jane"
-                                            required=""
+                                            placeholder="Nama lengkap"
+                                            required
                                         />
                                         <label for="form_name"
-                                            >First Name *</label
+                                            >Nama *</label
                                         >
                                         <div class="valid-feedback">
                                             Looks good!
                                         </div>
                                         <div class="invalid-feedback">
-                                            Please enter your first name.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /column -->
-                                <div class="col-md-6">
-                                    <div class="form-floating mb-4">
-                                        <input
-                                            id="form_lastname"
-                                            type="text"
-                                            name="surname"
-                                            class="form-control"
-                                            placeholder="Doe"
-                                            required=""
-                                        />
-                                        <label for="form_lastname"
-                                            >Last Name *</label
-                                        >
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Please enter your last name.
+                                            Please enter your full name.
                                         </div>
                                     </div>
                                 </div>
@@ -886,8 +528,8 @@
                                             type="email"
                                             name="email"
                                             class="form-control"
-                                            placeholder="jane.doe@example.com"
-                                            required=""
+                                            placeholder="help@contoh.com"
+                                            required
                                         />
                                         <label for="form_email">Email *</label>
                                         <div class="valid-feedback">
@@ -900,50 +542,18 @@
                                     </div>
                                 </div>
                                 <!-- /column -->
-                                <div class="col-md-6">
-                                    <div class="form-select-wrapper mb-4">
-                                        <select
-                                            class="form-select"
-                                            id="form-select"
-                                            name="department"
-                                            required=""
-                                        >
-                                            <option
-                                                selected=""
-                                                disabled=""
-                                                value=""
-                                            >
-                                                Select a department
-                                            </option>
-                                            <option value="Sales">Sales</option>
-                                            <option value="Marketing">
-                                                Marketing
-                                            </option>
-                                            <option value="Customer Support">
-                                                Customer Support
-                                            </option>
-                                        </select>
-                                        <div class="valid-feedback">
-                                            Looks good!
-                                        </div>
-                                        <div class="invalid-feedback">
-                                            Please select a department.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /column -->
                                 <div class="col-12">
                                     <div class="form-floating mb-4">
                                         <textarea
                                             id="form_message"
-                                            name="message"
+                                            name="pesan"
                                             class="form-control"
-                                            placeholder="Your message"
+                                            placeholder="Isi pesan"
                                             style="height: 150px"
-                                            required=""
+                                            required
                                         ></textarea>
                                         <label for="form_message"
-                                            >Message *</label
+                                            >Pesan *</label
                                         >
                                         <div class="valid-feedback">
                                             Looks good!
@@ -955,39 +565,11 @@
                                 </div>
                                 <!-- /column -->
                                 <div class="col-12">
-                                    <div class="form-check mb-4">
-                                        <input
-                                            class="form-check-input"
-                                            type="checkbox"
-                                            value=""
-                                            id="invalidCheck"
-                                            required=""
-                                        />
-                                        <label
-                                            class="form-check-label"
-                                            for="invalidCheck"
-                                        >
-                                            I agree to
-                                            <a href="#" class="hover"
-                                                >terms and policy</a
-                                            >.
-                                        </label>
-                                        <div class="invalid-feedback">
-                                            You must agree before submitting.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /column -->
-                                <div class="col-12">
                                     <input
                                         type="submit"
                                         class="btn btn-primary rounded-pill btn-send mb-3"
-                                        value="Send message"
+                                        value="Kirim Pesan"
                                     />
-                                    <p class="text-muted">
-                                        <strong>*</strong> These fields are
-                                        required.
-                                    </p>
                                 </div>
                                 <!-- /column -->
                             </div>
@@ -1004,10 +586,9 @@
                                 </div>
                             </div>
                             <div>
-                                <h5 class="mb-1">Address</h5>
+                                <h5 class="mb-1">Alamat</h5>
                                 <address>
-                                    Moonshine St. 14/05 Light City, London,
-                                    United Kingdom
+                                    Desa Liang Ndara Kecamatan Mbeliling Kabupaten Manggarai Barat - NTT
                                 </address>
                             </div>
                         </div>
@@ -1018,9 +599,9 @@
                                 </div>
                             </div>
                             <div>
-                                <h5 class="mb-1">Phone</h5>
+                                <h5 class="mb-1">Telepon</h5>
                                 <p>
-                                    00 (123) 456 78 90 <br />00 (987) 654 32 10
+                                    +62 812 4614 8901
                                 </p>
                             </div>
                         </div>
@@ -1035,15 +616,8 @@
                                 <p class="mb-0">
                                     <a
                                         href="mailto:sandbox@email.com"
-                                        class="text-body"
+                                        class="link-body"
                                         >sandbox@email.com</a
-                                    >
-                                </p>
-                                <p>
-                                    <a
-                                        href="mailto:help@sandbox.com"
-                                        class="text-body"
-                                        >help@sandbox.com</a
                                     >
                                 </p>
                             </div>

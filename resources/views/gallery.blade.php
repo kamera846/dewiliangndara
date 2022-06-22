@@ -4,10 +4,10 @@
     <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
         <div class="row">
             <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
-                <h1 class="mb-3">Our Galleries</h1>
+                <h1 class="mb-3">Galeri Kami</h1>
                 <p class="lead px-lg-5 px-xxl-8">
-                    Welcome to our lorem ipsum. Here you can find the latest
-                    company news and business articles.
+                    Disini anda bisa melihat momen-momen yang sempat kami
+                    abadikan.
                 </p>
             </div>
             <!-- /column -->
@@ -20,19 +20,6 @@
 
 <section class="bg-light pt-15 pt-md-17 pb-13 pb-md-15">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto mb-8">
-                <h2 class="fs-15 text-uppercase text-muted text-center mb-3">
-                    Our Galleries
-                </h2>
-                <h3 class="display-4 text-center">
-                    Check out some of our awesome Galleries with creative ideas
-                    and great design.
-                </h3>
-            </div>
-            <!-- /column -->
-        </div>
-        <!-- /.row -->
         <div class="grid grid-view projects-masonry">
             <div
                 class="row gx-md-8 gy-10 gy-md-13 isotope"
@@ -43,15 +30,15 @@
                     style="position: absolute; left: 0%; top: 0px"
                 >
                     <figure class="lift rounded mb-6">
-                        <a href="../../single-project.html">
-                            <img src="../../assets/img/photos/cs16.jpg" alt=""
-                        /></a>
-                    </figure>
+                        <a href="../../assets/img/photos/cs16.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs16.jpg" alt=""/>
+                        </a>
+                        </figure>
                     <div
                         class="project-details d-flex justify-content-center flex-column"
                     >
                         <div class="post-header">
-                            <h2 class="post-title h3">Cras Fermentum Sem</h2>
+                            <h3 class="h5">Cras Fermentum Sem</h3>
                         </div>
                         <!-- /.post-header -->
                     </div>
@@ -63,15 +50,15 @@
                     style="position: absolute; left: 33.3333%; top: 0px"
                 >
                     <figure class="lift rounded mb-6">
-                        <a href="../../single-project2.html">
-                            <img src="../../assets/img/photos/cs17.jpg" alt=""
-                        /></a>
-                    </figure>
+                        <a href="../../assets/img/photos/cs17.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs17.jpg" alt=""/>
+                        </a>
+                        </figure>
                     <div
                         class="project-details d-flex justify-content-center flex-column"
                     >
                         <div class="post-header">
-                            <h2 class="post-title h3">Mollis Ipsum Mattis</h2>
+                            <h3 class="h5">Mollis Ipsum Mattis</h3>
                         </div>
                         <!-- /.post-header -->
                     </div>
@@ -83,17 +70,17 @@
                     style="position: absolute; left: 66.6667%; top: 0px"
                 >
                     <figure class="lift rounded mb-6">
-                        <a href="../../single-project3.html">
-                            <img src="../../assets/img/photos/cs18.jpg" alt=""
-                        /></a>
-                    </figure>
+                        <a href="../../assets/img/photos/cs18.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs18.jpg" alt=""/>
+                        </a>
+                        </figure>
                     <div
                         class="project-details d-flex justify-content-center flex-column"
                     >
                         <div class="post-header">
-                            <h2 class="post-title h3">
+                            <h3 class="h5">
                                 Ipsum Ultricies Cursus
-                            </h2>
+                            </h3>
                         </div>
                         <!-- /.post-header -->
                     </div>
@@ -105,17 +92,17 @@
                     style="position: absolute; left: 66.6667%; top: 499.812px"
                 >
                     <figure class="lift rounded mb-6">
-                        <a href="../../single-project2.html">
-                            <img src="../../assets/img/photos/cs20.jpg" alt=""
-                        /></a>
-                    </figure>
+                        <a href="../../assets/img/photos/cs20.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs20.jpg" alt=""/>
+                        </a>
+                        </figure>
                     <div
                         class="project-details d-flex justify-content-center flex-column"
                     >
                         <div class="post-header">
-                            <h2 class="post-title h3">
+                            <h3 class="h5">
                                 Inceptos Euismod Egestas
-                            </h2>
+                            </h3>
                         </div>
                         <!-- /.post-header -->
                     </div>
@@ -127,17 +114,17 @@
                     style="position: absolute; left: 0%; top: 581.125px"
                 >
                     <figure class="lift rounded mb-6">
-                        <a href="../../single-project.html">
-                            <img src="../../assets/img/photos/cs19.jpg" alt=""
-                        /></a>
-                    </figure>
+                        <a href="../../assets/img/photos/cs19.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs19.jpg" alt=""/>
+                        </a>
+                        </figure>
                     <div
                         class="project-details d-flex justify-content-center flex-column"
                     >
                         <div class="post-header">
-                            <h2 class="post-title h3">
+                            <h3 class="h5">
                                 Sollicitudin Ornare Porta
-                            </h2>
+                            </h3>
                         </div>
                         <!-- /.post-header -->
                     </div>
@@ -149,17 +136,17 @@
                     style="position: absolute; left: 33.3333%; top: 634.797px"
                 >
                     <figure class="lift rounded mb-6">
-                        <a href="../../single-project3.html">
-                            <img src="../../assets/img/photos/cs21.jpg" alt=""
-                        /></a>
-                    </figure>
+                        <a href="../../assets/img/photos/cs21.jpg" data-glightbox="title: Title; description: Description" data-gallery="g1">
+                            <img src="../../assets/img/photos/cs21.jpg" alt=""/>
+                        </a>
+                        </figure>
                     <div
                         class="project-details d-flex justify-content-center flex-column"
                     >
                         <div class="post-header">
-                            <h2 class="post-title h3">
+                            <h3 class="h5">
                                 Ipsum Mollis Vulputate
-                            </h2>
+                            </h3>
                         </div>
                         <!-- /.post-header -->
                     </div>
